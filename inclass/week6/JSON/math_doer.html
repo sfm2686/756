@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <title>Math Doer</title>
+  <style>
+
+  </style>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script>
+    $( function() {
+      $( "#submit-button" ).click( function() {
+        var numbers = _.reduce( $( "#numbers-textarea" ).val().split("\n"), function( carry, iteratee ) {
+              iteratee = parseInt( iteratee );
+              if ( _.isNumber( iteratee ) && !_.isNaN( iteratee ) ) {
+                carry.push( iteratee );
+              }
+              return carry;
+            }, [] );
+
+            payload = {
+              operation: ( $( "#add-radio" ).prop( "checked" ) ? "add" : "multiply" ),
+              numbers: numbers
+            },
+            jsonPayload = JSON.stringify( payload );
+        console.log( payload, jsonPayload );
+
+        $.ajax({
+          // url: "http://kelvin.ist.rit.edu/~dmgics/756/12/math_doer.php",
+          url: "server.php",
+          data: "payload=" + jsonPayload,
+          success: function( data ) {
+            $( "#result-p" ).html( "Result: " + data.result );
+          }
+        });
+      });
+    });
+
+  </script>
+</head>
+<body>
+  <p>Enter the numbers to add, one per line:</p>
+  <form>
+    <label for="add-radio"><input type="radio" name="operation-radio" value="add" id="add-radio" checked />Add</label>
+    <label for="multiply-radio"><input type="radio" name="operation-radio" value="multiply" id="multiply-radio"/>Multiply</label><br/>
+
+    <textarea id="numbers-textarea" rows="15" cols=30"></textarea><br/>
+    <input type="button" value="Do Math!" id="submit-button" />
+  </form>
+  <p id="result-p"></p>
+</body>
+</html>

@@ -30,6 +30,7 @@
       }
     }
 
+    // prepared statements
     function insert_person($last, $first,  $nick) {
       $query = "INSERT INTO (LastName, FirstName, Nickname) VALUES(?, ?, ?)";
 
