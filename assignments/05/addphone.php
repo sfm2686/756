@@ -5,6 +5,7 @@
   $person_id = "";
   if (isset($_GET['PersonId'])) {
     $person_id = $_GET['PersonId'];
+    echo "got";
   }
 
   $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);

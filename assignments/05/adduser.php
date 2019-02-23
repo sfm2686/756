@@ -35,7 +35,6 @@
   $mysqli->close();
   // end of dropdown population
 
-
   $person_id = "";
   if (isset($_GET['PersonId'])) {
     $person_id = $_GET['PersonId'];
@@ -44,78 +43,42 @@
   $db = DB::getInstance();
 
   function validate_phone_number($areaCode, $phoneNumber) {
-    return preg_match('/\d{3}/', $areaCode) && preg_match('/\d{7}/', $phoneNumber);
+    return preg_match("/^[0-9]+$/",$areaCode) && preg_match("/^[0-9]+$/",$phoneNumber);
   }
 
   function validate_name($fname, $lname) {
-    return is_string($fname) && is_string($lname);
+    return preg_match("/^[a-zA-Z\s]+$/",$fname) && preg_match("/^[a-zA-Z\s]+$/",$lname);
   }
 
     if (!empty($_GET['fname']) && !empty($_GET['lname'])) {
-      if (!empty($_GET['nickname'])) {
-        $query = "INSERT INTO people (LastName, FirstName, NickName) VALUES (?, ?, ?)";
+      if (validate_name($_GET['fname'], $_GET['lname'])) {
+        if (!empty($_GET['nickname'])) {
+          $query = "INSERT INTO people (LastName, FirstName, NickName) VALUES (?, ?, ?)";
 
-        $db->do_query($query, array($_GET['lname'], $_GET['fname'], $_GET['nickname']), array("s", "s", "s"));
+          $db->do_query($query, array($_GET['lname'], $_GET['fname'], $_GET['nickname']), array("s", "s", "s"));
+        } else {
+          $query = "INSERT INTO people (LastName, FirstName) VALUES (?, ?)";
+
+          $db->do_query($query, array($_GET['lname'], $_GET['fname']), array("s", "s"));
+        }
+        $personId = $db->get_insert_id();
+
+        if (!empty($_GET['areaCode']) && !empty($_GET['phoneNumber'])) {
+          if (validate_phone_number($_GET['areaCode'], $_GET['phoneNumber'])) {
+            $query = "INSERT INTO phonenumbers (AreaCode, PhoneNumber, PersonId, PhoneTypeId) VALUES (?, ?, ?, ?)";
+
+            $db->do_query($query, array($_GET['areaCode'], $_GET['phoneNumber'], $personId, $phoneTypesIds[$_GET['type']]), array("i", "i", "i", "i"));
+          } else {
+            echo "<h3 style='color:red;'>Invalid characters in the phone number or area code fields</h3>";
+            die();
+          }
+        }
+        header('Location: people.php');
       } else {
-        $query = "INSERT INTO people (LastName, FirstName) VALUES (?, ?)";
-
-        $db->do_query($query, array($_GET['lname'], $_GET['fname']), array("s", "s"));
+        echo "<h3 style='color:red;'>Invalid characters in the first or last name fields</h3>";
+        die();
       }
-      $db->get_insert_id();
     }
-
-  // $query = "SELECT * FROM phonetypes";
-  //
-  // $db->do_query( $query);
-  // $records = $db->fetch_all_array();
-  // // print_r($records);
-  //
-  // $i = 1;
-  // foreach ($records as $rec) {
-  //   $phoneTypesIds[$i] = $rec['PhoneTypeId'];
-  //   $phoneTypes[$i] = $rec['PhoneType'];
-  //   $i += 1;
-  // }
-//
-//   function add_phone($personId, $areaCode, $phoneNumber, $type, $db) {
-//     $query = "INSERT INTO phonenumbers (AreaCode, PhoneNumber, PersonId, PhoneTypeId) VALUES (????)";
-//
-//     $db->do_query($query, array($areaCode, $phoneNumber, $personId, $type), array("i", "i", "i", "i"));
-//     return $db->get_insert_id();
-//   }
-//
-//   function add_user($personId, $fname, $lname, $nick="", $db) {
-//     if (!empty($nick)) {
-//       $query = "INSERT INTO people (PersonId, LastName, FirstName, NickName) VALUES (????)";
-//
-//       $db->do_query($query, array($personId, $lname, $fname, $nick), array("i", "s", "s", "s"));
-//     } else {
-//       $query = "INSERT INTO people (PersonId, LastName, FirstName) VALUES (???)";
-//
-//       $db->do_query($query, array($personId, $lname, $fname), array("i", "s", "s"));
-//     }
-//     return $db->get_insert_id();
-//   }
-//
-//   // if (!empty($_GET['fname']) && !empty($_GET['lname']) && !empty($_GET['personId'])) {
-//   if (!empty($_GET['fname']) && !empty($_GET['lname']) && !empty($_GET['PersonId'])) {
-//     if (validate_name($_GET['fname'], $_GET['lname'])) {
-//       echo "passed valid";
-//       if ($_GET['nickname']) {
-//         add_user($_GET['PersonId'], $_GET['fname'], $_GET['lname'], $_GET['nickname'], $db);
-//       } else {
-//         add_user($_GET['PersonId'], $_GET['fname'], $_GET['lname'], "", $db);
-//       }
-//     }
-//     header('Location: people.php');
-//   }
-//
-// if (!empty($_GET['areaCode']) && !empty($_GET['phoneNumber']) && !empty($_GET['personId'])) {
-//   if (validate_phone_number($_GET['areaCode'], $_GET['phoneNumber'])) { // validation for phone number
-//     add_phone($_GET['personId'], $_GET['areaCode'], $_GET['phoneNumber'], $phoneTypesIds[$_GET['type']], $db);
-//   }
-//   header('Location: people.php');
-// }
 ?>
 <!doctype html>
 <html lang="en-us">

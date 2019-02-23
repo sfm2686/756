@@ -13,9 +13,11 @@
 
   $db->do_query( $query, array(), array() );
   $results = $db->fetch_all_array();
-  $col = "Add Phone";
-  $link = "<a href=addphone.php?PersonId=" . $results[0]["PersonId"] . ">Add Phone</a>";
-  $results[0] += [$col => $link];
+  
   echo FN::build_table( $results );
 
+  echo "<h3>Add Phone</h3>";
+  foreach ( $results as $record ) {
+    echo "<a href='addphone.php?PersonId=" . $record['PersonId'] . "'>Phone ID:" . $record['PersonId'] . "</a><br>";
+  }
 ?>
