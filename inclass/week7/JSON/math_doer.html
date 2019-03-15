@@ -28,7 +28,7 @@
 
         $.ajax({
           // url: "http://kelvin.ist.rit.edu/~dmgics/756/12/math_doer.php",
-          url: "server.php",
+          url: "server.php", // cuz its local
           data: "payload=" + jsonPayload,
           success: function( data ) {
             $( "#result-p" ).html( "Result: " + data.result );
