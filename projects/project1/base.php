@@ -1,4 +1,19 @@
-<?php require_once 'libs/phpti/ti.php' ?>
+<?php
+  require_once 'libs/phpti/ti.php';
+  session_start();
+
+  // get current page without full url
+  $curr_page = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], '/') + 1) . "";
+  $login_button = "Login";
+  if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+    $login_button = "Logout";
+  } else {
+    // ensure user logs before visting any page
+    if ($curr_page != "login.php") {
+      header("Location: login.php");
+    }
+  }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,10 +22,10 @@
       <?php startblock('title'); ?>
       <?php endblock(); ?>
     </title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
@@ -22,19 +37,28 @@
         <a class="navbar-brand" href="index.php">website name</a>
       </div> -->
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Page 2</a></li>
+
+        <!-- hide admin page link from everyone other than admins -->
+        <li><a
+          <?php
+            if (!isset($_SESSION['role']) || $_SESSION['role'] > 4) {
+              echo "style='display: none'";
+            }
+          ?>
+          href='admin.php'>Admin</a></li>
+
+        <li><a href="team.php">Team</a></li>
+        <li><a href="schedule.php">Schedule</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a
+          <?php
+            if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+              echo "style='display: none'";
+            }
+          ?>
+          href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> <?= $login_button ?></a></li>
       </ul>
     </div>
   </nav>
@@ -42,8 +66,8 @@
   <?php startblock('body'); ?>
   <?php endblock(); ?>
 
-  <footer>
-    <?= date("Y"); ?>
+  <footer class="template-footer">
+    @copyright <?= date("Y"); ?>
   </footer>
 
   </body>

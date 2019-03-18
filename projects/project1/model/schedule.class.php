@@ -1,5 +1,8 @@
 <?php
-class Schedule {
+
+include_once 'model.class.php';
+
+class Schedule extends Model {
 
   private $sport;
   private $league;
@@ -10,18 +13,6 @@ class Schedule {
   private $awayscore;
   private $scheduled;
   private $completed;
-
-  public function __construct($sport, $league, $season, $hometeam, $awayteam, $homescore, $awayscore, $scheduled, $completed) {
-    $this->sport = $sport;
-    $this->league = $league;
-    $this->season = $season;
-    $this->hometeam = $hometeam;
-    $this->awayteam = $awayteam;
-    $this->homescore = $homescore;
-    $this->awayscore = $awayscore;
-    $this->scheduled = $scheduled;
-    $this->completed = $completed;
-  }
 
     /**
      * Get the value of Sport
@@ -220,6 +211,5 @@ class Schedule {
 
         return $this;
     }
-
 }
 ?>
