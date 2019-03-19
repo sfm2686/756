@@ -7,21 +7,24 @@
   echo "Team";
   endblock();
 
+  $msg = $_SESSION['username'] . " visited team page";
+  Log::record_log($msg);
+
   $db = PDO_DB::getInstance();
   $results = $db->get_object_by_id("server_team", $_SESSION['team']);
   $data = count($results) == 1 ? $results[0] : null;
   $err_msg = "";
   if (!$data) {
-    // Log::record_log($e->getMessage());
-    $err_msg = "The record does not show a team for you";
+    $err_msg = "The record does not show any schedules for you";
   } else {
     $data = $results[0];
   }
 
   startblock('body');
 
+  $display = "<div class='container'>";
   if ($data) {
-    $display = "<h2>Team</h2>";
+    $display .= "<h2>Team</h2>";
     $display .= "<label>Name: " . $data['name'] . "</label><br>";
     $display .= "<label>Mascot: " . $data['mascot'] . "</label><br>";
 
@@ -47,6 +50,7 @@
   } else {
     $display = "<p class='text-danger'>$err_msg</p>";
   }
+  $display .= "</div>";
   echo $display;
 
   endblock();

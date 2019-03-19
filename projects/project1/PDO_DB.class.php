@@ -24,7 +24,7 @@
         $this->db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         $this->db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
       } catch (PDOException $e) {
-        // Log::record_log($e->getMessage());
+        Log::record_log($e->getMessage());
         echo $e;
         die();
       }
@@ -48,7 +48,8 @@
         $stm->execute();
         return $this->db->lastInsertID();
       } catch (PDOException $e) {
-        // Log::record_log($e->getMessage());
+        Log::record_log($e->getMessage());
+        echo $e;
         die();
       }
     }
@@ -64,7 +65,7 @@
           }
           return $data;
         } catch (PDOException $e) {
-          // Log::record_log($e->getMessage());
+          Log::record_log($e->getMessage());
           die();
         }
       }
@@ -74,12 +75,9 @@
           $data = array();
           $stm = $this->db->prepare("SELECT * FROM $table");
           $stm->execute();
-          // while ($obj = $stm->fetch()) {
-          //   $data[] = $obj;
-          // }
           return $stm->fetchAll();
         } catch (PDOException $e) {
-          // Log::record_log($e->getMessage());
+          Log::record_log($e->getMessage());
           die();
         }
       }
@@ -92,7 +90,7 @@
           $stm->setFetchMode(PDO::FETCH_CLASS, "Model");
           return $stm->fetchAll();
         } catch (PDOException $e) {
-          // Log::record_log($e->getMessage());
+          Log::record_log($e->getMessage());
           die();
         }
       }
@@ -100,13 +98,14 @@
       function get_schedules_for_user($team) {
         try {
           $stm = $this->db->prepare("SELECT * FROM server_schedule
-            WHERE hometeam = :team OR awayteam = :team");
+            WHERE hometeam = :team OR awayteam = :team
+            ORDER BY completed");
           $stm->bindParam(":team", $team, PDO::PARAM_INT);
           $stm->execute();
           $data = $stm->fetchAll();
           return $data;
         } catch (PDOException $e) {
-          // Log::record_log($e->getMessage());
+          Log::record_log($e->getMessage());
           die();
         }
       }
@@ -120,7 +119,7 @@
           $data = $stm->fetchAll();
           return $data;
         } catch (PDOException $e) {
-          // Log::record_log($e->getMessage());
+          Log::record_log($e->getMessage());
           die();
         }
       }

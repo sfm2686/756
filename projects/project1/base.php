@@ -4,12 +4,16 @@
 
   // get current page without full url
   $curr_page = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], '/') + 1) . "";
+
   $login_button = "Login";
-  if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+  $button_href = "login.php";
+  $loggedIn = isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true ? true : false;
+  if ($loggedIn) { // user loggedd in
     $login_button = "Logout";
+    $button_href = "logout.php";
   } else {
     // ensure user logs before visting any page
-    if ($curr_page != "login.php") {
+    if ($curr_page != "login.php" && $curr_page != "register.php") {
       header("Location: login.php");
     }
   }
@@ -58,7 +62,7 @@
             }
           ?>
           href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> <?= $login_button ?></a></li>
+        <li><a href=<?= $button_href ?>><span class="glyphicon glyphicon-log-in"></span> <?= $login_button ?></a></li>
       </ul>
     </div>
   </nav>
