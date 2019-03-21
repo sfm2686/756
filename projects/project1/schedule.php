@@ -1,9 +1,9 @@
 <?php
   include 'base.php';
   include 'log.php';
-  include_once 'PDO_DB.class.php';
-
-  include 'util.php';
+  // TODO FIX
+  // include 'display.php';
+  include 'PDO_DB.class.php';
 
   startblock('title');
   echo "Schedule";
@@ -15,40 +15,41 @@
   startblock('body');
 
   $db = PDO_DB::getInstance();
-  $data = $db->get_schedules_for_user($_SESSION['team']);
+
+  $query = "SELECT
+  Sport.name AS Sport, League.name AS League, Home.name AS Home,
+  Season.year AS 'Season Year', Season.description AS 'Season Description',
+  Away.name AS Away,
+  homescore AS Homescore, awayscore AS Awayscore, scheduled AS Scheduled,
+  completed AS Completed
+  FROM server_schedule AS schedule
+  JOIN server_sport AS Sport
+  ON schedule.sport = Sport.id
+  JOIN server_league AS League
+  ON schedule.league = League.id
+  JOIN server_season AS Season
+  ON schedule.season = Season.id
+  JOIN server_team AS Home
+  ON schedule.hometeam = Home.id
+  JOIN server_team AS Away
+  ON schedule.awayteam = Away.id
+  WHERE schedule.hometeam = :team OR schedule.awayteam = :team";
+  $params = array(
+    ":team" => $_SESSION['team']
+  );
+  $data = $db->select($query, $params, true);
 
   $display = "<div class='container'>";
-  $display .= "<h2>Schedule</h2>";
   if (count($data) > 0) {
     for($i = 0; $i < count($data); $i ++) {
-      // change sport
-      $sport = $db->get_object_by_id("server_sport", $data[$i]['sport'])[0]['name'];
-      $data[$i]['sport'] = $sport;
-
-      $league = $db->get_object_by_id("server_league", $data[$i]['league'])[0]['name'];
-      $data[$i]['league'] = $league;
-
-      $season_info = $db->get_object_by_id("server_season", $data[$i]['season'])[0];
-      $season_y = $season_info['year'];
-      $season_d = $season_info['description'];
-      $data[$i]['season'] = $season_y;
-      $data[$i]['season description'] = $season_d;
-
-      $h_team = $db->get_object_by_id("server_team", $data[$i]['hometeam'])[0]['name'];
-      $a_team = $db->get_object_by_id("server_team", $data[$i]['awayteam'])[0]['name'];
-      $data[$i]['hometeam'] = $h_team;
-      $data[$i]['awayteam'] = $a_team;
-
-      $data[$i]['completed'] = $data[$i]['completed'] == 1 ? "yes" : "no";
+      $data[$i]->__set('Completed', $data[$i]->__get('Completed') == 1 ? "yes" : "no");
     }
-    $display .= display($data);
+    $display .= display($data, "Games");
   } else {
     $display .= "<p class='text-danger'>No schedules were found in record</p>";
   }
   $display .= "</div>";
 
   echo $display;
-
-  
   endblock();
 ?>

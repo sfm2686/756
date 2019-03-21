@@ -1,7 +1,7 @@
 <?php
   include 'base.php';
   include 'log.php';
-  include 'util.php';
+  include 'validators.php';
   include 'PDO_DB.class.php';
 
   startblock('title');
@@ -9,6 +9,8 @@
   endblock();
 
   // TODO add captcha for login/registration
+  // TODO users can only register as parents
+  // TODO validators for username are now in user.class.php
 
   if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     header("Location: admin.php");
@@ -17,9 +19,9 @@
   startblock('body');
 
   $db = PDO_DB::getInstance();
-  $teams = $db->get_all_data("server_team");
-  $roles = $db->get_all_data("server_roles");
-  $leagues = $db->get_all_data("server_league");
+  $teams = $db->select("select * from server_team");
+  $roles = $db->select("select * from server_roles");
+  $leagues = $db->select("select * from server_league");
   $err_msg = "";
 
   if (isset($_POST['username']) && isset($_POST['password1']) && isset($_POST['password2'])) {
@@ -39,7 +41,7 @@
                           "team"      => $_POST['team'],
                           "league"    => $_POST['league']);
           $db->insert($table, $values);
-          $msg = $_SESSION['username'] . " registered";
+          $msg = $_POST['username'] . " registered";
           Log::record_log($msg);
           header("Location: login.php");
         } else { // username already taken
@@ -53,8 +55,6 @@
       Password should  be between 20 and 8 characters";
     }
   }
-
-  // startblock('body');
 ?>
 
 <div class="container">
@@ -68,7 +68,7 @@
       foreach($teams as $team) {
         $id = $team['id'];
         $name = $team['name'];
-        echo make_select_option($id, $name);
+        echo "<option value=$id>$name</option>";
       }
     ?>
   </select><br>
@@ -78,7 +78,7 @@
       foreach($roles as $role) {
         $id = $role['id'];
         $name = $role['name'];
-        echo make_select_option($id, $name);
+        echo "<option value=$id>$name</option>";
       }
     ?>
   </select><br>
@@ -89,7 +89,7 @@
       foreach($leagues as $league) {
         $id = $league['id'];
         $name = $league['name'];
-        echo make_select_option($id, $name);
+        echo "<option value=$id>$name</option>";
       }
     ?>
   </select><br>

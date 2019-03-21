@@ -1,7 +1,7 @@
 <?php
   include 'base.php';
   include 'PDO_DB.class.php';
-  include 'util.php';
+  include 'validators.php';
   include_once 'log.php';
 
   startblock('title');
@@ -10,11 +10,12 @@
 
   startblock('body');
   if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-    header("Location: admin.php");
+    header("Location: team.php");
   }
   $err_msg = "";
 
   // TODO add captcha for login/registration
+  // TODO validators for username are now in user.class.php
 
   if (isset($_POST['username']) && isset($_POST['password'])) {
       $f_username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
@@ -31,7 +32,7 @@
               $_SESSION['role'] = $user->__get('role');
               $_SESSION['team'] = $user->__get('team');
               $_SESSION['league'] = $user->__get('league');
-              header("Location: admin.php");
+              header("Location: team.php");
           } else { // invalid password
             $err_msg = "Wrong password";
           }

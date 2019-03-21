@@ -49,7 +49,6 @@
         return $this->db->lastInsertID();
       } catch (PDOException $e) {
         Log::record_log($e->getMessage());
-        echo $e;
         die();
       }
     }
@@ -70,16 +69,32 @@
         }
       }
 
-      function get_all_data($table = "") {
+      function select($query ,$values=array(), $obj=false) {
         try {
-          $data = array();
-          $stm = $this->db->prepare("SELECT * FROM $table");
+          $stm = $this->db->prepare($query);
+          if ($values) {
+            foreach($values as $param => $value)
+            $stm->bindValue($param, $value);
+          }
+
           $stm->execute();
+
+          if ($obj) {
+            $stm->setFetchMode(PDO::FETCH_CLASS, "Model");
+          }
+
           return $stm->fetchAll();
         } catch (PDOException $e) {
           Log::record_log($e->getMessage());
-          die();
         }
+      }
+
+      function update($query) {
+        ;
+      }
+
+      function delete($query) {
+        ;
       }
 
       function get_user_by_username($username) {

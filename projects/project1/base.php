@@ -35,44 +35,43 @@
   </head>
   <body>
 
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <!-- <div class="navbar-header">
-        <a class="navbar-brand" href="index.php">website name</a>
-      </div> -->
-      <ul class="nav navbar-nav">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- <div class="navbar-header">
+          <a class="navbar-brand" href="index.php">website name</a>
+        </div> -->
+        <ul class="nav navbar-nav">
 
-        <!-- hide admin page link from everyone other than admins -->
-        <li><a
-          <?php
-            if (!isset($_SESSION['role']) || $_SESSION['role'] > 4) {
-              echo "style='display: none'";
-            }
-          ?>
-          href='admin.php'>Admin</a></li>
+          <!-- hide admin page link from everyone other than admins -->
+          <li><a
+            <?php
+              if (!isset($_SESSION['role']) || $_SESSION['role'] > 4) {
+                echo "style='display: none'";
+              }
+            ?>
+            href='admin.php'>Admin</a></li>
 
-        <li><a href="team.php">Team</a></li>
-        <li><a href="schedule.php">Schedule</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a
-          <?php
-            if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-              echo "style='display: none'";
-            }
-          ?>
-          href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href=<?= $button_href ?>><span class="glyphicon glyphicon-log-in"></span> <?= $login_button ?></a></li>
-      </ul>
-    </div>
-  </nav>
+          <li><a href="team.php">Team</a></li>
+          <li><a href="schedule.php">Schedule</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a
+            <?php
+              if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                echo "style='display: none'";
+              }
+            ?>
+            href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href=<?= $button_href ?>><span class="glyphicon glyphicon-log-in"></span> <?= $login_button ?></a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <?php startblock('body'); ?>
-  <?php endblock(); ?>
+    <?php startblock('body'); ?>
+    <?php endblock(); ?>
 
+  </body>
   <footer class="template-footer">
     @copyright <?= date("Y"); ?>
   </footer>
-
-  </body>
 </html>
