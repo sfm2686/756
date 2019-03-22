@@ -6,13 +6,6 @@
 
   include_once 'controllers/AdminLevel.class.php';
 
-  // ROLES CONSTANTS
-  define("ADMIN_ROLE", 1);
-  define("L_MANAGER_ROLE", 2);
-  define("T_MANAGER_ROLE", 3);
-  define("COACH_ROLE", 4);
-  define("PARENT_ROLE", 5);
-
   // in case an unauthorized user found the admin page link
   if ($_SESSION['role'] == PARENT_ROLE) {
     header("Location: team.php");
@@ -21,8 +14,6 @@
   startblock('title');
   echo "Admin";
   endblock();
-
-  echo isset($_POST['form1']);
 
   $msg = $_SESSION['username'] . " visited admin page";
   Log::record_log($msg);
@@ -39,10 +30,7 @@
   if ($_SESSION['role'] == ADMIN_ROLE) {
     $controller = new AdminLevel();
   } // ADMIN ROLE
-  $controller->display_editable_tables();
-
-  print_r($_POST);
-
+  $controller->display_admin_data();
 
   endblock();
   //

@@ -1,7 +1,6 @@
 <?php
 
-  define ("LOG_FILE", "log.txt");
-
+  include_once 'base.php'; // to get log file const
   class Log {
 
     /* Takes in a message as a string and appends it to the log file defined as

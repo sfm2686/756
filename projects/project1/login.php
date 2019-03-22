@@ -1,7 +1,7 @@
 <?php
   include 'base.php';
   include 'PDO_DB.class.php';
-  include 'validators.php';
+  include 'model/user.class.php';
   include_once 'log.php';
 
   startblock('title');
@@ -19,7 +19,7 @@
 
   if (isset($_POST['username']) && isset($_POST['password'])) {
       $f_username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
-    if (validate_username($f_username) && validate_password($_POST['password'])) {
+    if (User::validate_username($f_username) && User::validate_password($_POST['password'])) {
         $db = PDO_DB::getInstance();
         $results = $db->get_user_by_username($f_username);
         $user = count($results) == 1 ? $results[0] : null;

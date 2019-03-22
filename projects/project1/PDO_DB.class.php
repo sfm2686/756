@@ -25,7 +25,6 @@
         $this->db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
       } catch (PDOException $e) {
         Log::record_log($e->getMessage());
-        echo $e;
         die();
       }
     }
@@ -49,10 +48,10 @@
         return $this->db->lastInsertID();
       } catch (PDOException $e) {
         Log::record_log($e->getMessage());
-        die();
       }
     }
 
+    // TODO delete
       function get_all_objects($table = "") {
         try {
           $data = array();
@@ -69,34 +68,51 @@
         }
       }
 
-      function select($query ,$values=array(), $obj=false) {
+      function select($query ,$values=array()) {
         try {
           $stm = $this->db->prepare($query);
           if ($values) {
             foreach($values as $param => $value)
             $stm->bindValue($param, $value);
           }
-
           $stm->execute();
-
-          if ($obj) {
-            $stm->setFetchMode(PDO::FETCH_CLASS, "Model");
-          }
+          $stm->setFetchMode(PDO::FETCH_CLASS, "Model");
 
           return $stm->fetchAll();
+        } catch (PDOException $e) {
+          echo $e->getMessage();
+          Log::record_log($e->getMessage());
+        }
+      }
+
+      function update($query, $values=array()) {
+        try {
+          $stm = $this->db->prepare($query);
+          if ($values) {
+            foreach($values as $param => $value)
+            $stm->bindValue($param, $value);
+          }
+          $stm->execute();
+        } catch (PDOException $e) {
+          echo $e->getMessage();
+          Log::record_log($e->getMessage());
+        }
+      }
+
+      function delete($query, $values) {
+        try {
+          $stm = $this->db->prepare($query);
+          if ($values) {
+            foreach($values as $param => $value)
+            $stm->bindValue($param, $value);
+          }
+          $stm->execute();
         } catch (PDOException $e) {
           Log::record_log($e->getMessage());
         }
       }
 
-      function update($query) {
-        ;
-      }
-
-      function delete($query) {
-        ;
-      }
-
+      // TODO delete
       function get_user_by_username($username) {
         try {
           $stm = $this->db->prepare("SELECT * FROM server_user WHERE username = :uname");
@@ -110,6 +126,7 @@
         }
       }
 
+      // TODO delete
       function get_schedules_for_user($team) {
         try {
           $stm = $this->db->prepare("SELECT * FROM server_schedule
@@ -125,6 +142,7 @@
         }
       }
 
+      // TODO delete
       function get_object_by_id($table, $id) {
         try {
           $stm = $this->db->prepare("SELECT * FROM $table
