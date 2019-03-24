@@ -8,6 +8,7 @@
     private static $db_instance;
 
     private $db;
+    private $error = "";
 
     private function __construct() {
       require_once "/home/MAIN/sfm2686/db_conn.php";
@@ -80,8 +81,8 @@
 
           return $stm->fetchAll();
         } catch (PDOException $e) {
-          echo $e->getMessage();
           Log::record_log($e->getMessage());
+          return 0;
         }
       }
 
@@ -94,8 +95,8 @@
           }
           $stm->execute();
         } catch (PDOException $e) {
-          echo $e->getMessage();
           Log::record_log($e->getMessage());
+          return $this->db->errorCode();
         }
       }
 
@@ -109,6 +110,7 @@
           $stm->execute();
         } catch (PDOException $e) {
           Log::record_log($e->getMessage());
+          return 0;
         }
       }
 

@@ -65,3 +65,449 @@
 2019-03-22-15-56-54: adminadmin visited admin page
 2019-03-22-15-57-08: adminadmin visited admin page
 2019-03-22-15-57-15: adminadmin visited admin page
+2019-03-23-08-29-00:  visited admin page
+2019-03-23-08-29-05: adminadmin logged in
+2019-03-23-08-29-05: adminadmin visited team page
+2019-03-23-08-29-06: adminadmin visited admin page
+2019-03-23-08-29-24: SQLSTATE[23000]: Integrity constraint violation: 1557 Upholding foreign key constraints for table 'server_sport', entry '1', key 1 would lead to a duplicate entry
+2019-03-23-08-29-24: adminadmin visited admin page
+2019-03-23-08-30-08: adminadmin visited admin page
+2019-03-23-08-30-23: SQLSTATE[23000]: Integrity constraint violation: 1557 Upholding foreign key constraints for table 'server_sport', entry '1', key 1 would lead to a duplicate entry
+2019-03-23-08-30-23: adminadmin visited admin page
+2019-03-23-08-38-41: adminadmin visited admin page
+2019-03-23-08-38-58: adminadmin visited admin page
+2019-03-23-08-39-10: adminadmin visited admin page
+2019-03-23-08-39-14: adminadmin visited admin page
+2019-03-23-08-39-19: adminadmin visited admin page
+2019-03-23-08-39-22: adminadmin visited admin page
+2019-03-23-08-39-24: adminadmin visited admin page
+2019-03-23-08-43-17: adminadmin logged out
+2019-03-23-08-43-43: adminadmin logged in
+2019-03-23-08-43-43: adminadmin visited team page
+2019-03-23-08-44-13: adminadmin visited schedule page
+2019-03-23-08-44-25: adminadmin visited admin page
+2019-03-23-08-45-10: adminadmin visited admin page
+2019-03-23-08-45-39: adminadmin visited admin page
+2019-03-23-08-46-09: adminadmin visited admin page
+2019-03-23-08-46-15: adminadmin visited admin page
+2019-03-23-08-50-49: adminadmin visited admin page
+2019-03-23-08-50-51: adminadmin logged out
+2019-03-23-08-50-55: adminadmin2 logged in
+2019-03-23-08-50-55: adminadmin2 visited team page
+2019-03-23-08-50-57: adminadmin2 visited admin page
+2019-03-23-08-51-02: adminadmin2 visited admin page
+2019-03-23-08-51-05: adminadmin2 visited team page
+2019-03-23-08-51-06: adminadmin2 visited schedule page
+2019-03-23-08-51-07: adminadmin2 visited admin page
+2019-03-23-08-51-09: adminadmin2 logged out
+2019-03-23-08-51-27: adminadmin logged in
+2019-03-23-08-51-27: adminadmin visited team page
+2019-03-23-08-51-29: adminadmin visited admin page
+2019-03-23-08-53-45: adminadmin logged out
+2019-03-23-08-53-54: ritparent logged in
+2019-03-23-08-53-54: ritparent visited team page
+2019-03-23-08-54-02: ritparent visited schedule page
+2019-03-23-08-54-04: ritparent visited team page
+2019-03-23-08-54-09: ritparent logged out
+2019-03-23-08-54-17: adminadmin logged in
+2019-03-23-08-54-17: adminadmin visited team page
+2019-03-23-08-58-15: adminadmin visited admin page
+2019-03-23-09-12-14: adminadmin visited admin page
+2019-03-23-09-12-17: adminadmin visited admin page
+2019-03-23-09-24-05: adminadmin visited admin page
+2019-03-23-09-24-10: adminadmin visited admin page
+2019-03-23-09-24-17: adminadmin visited admin page
+2019-03-23-09-24-19: adminadmin visited admin page
+2019-03-23-09-24-52: adminadmin visited admin page
+2019-03-23-09-24-55: adminadmin visited admin page
+2019-03-23-09-24-59: adminadmin visited admin page
+2019-03-23-09-25-02: adminadmin visited admin page
+2019-03-23-09-25-04: adminadmin visited admin page
+2019-03-23-09-43-17: adminadmin visited admin page
+2019-03-23-09-43-45: adminadmin visited admin page
+2019-03-23-09-44-17: adminadmin visited admin page
+2019-03-23-09-44-48: adminadmin visited admin page
+2019-03-23-09-46-09: adminadmin visited admin page
+2019-03-23-09-46-29: adminadmin visited admin page
+2019-03-23-09-46-35: adminadmin visited admin page
+2019-03-23-09-46-47: adminadmin visited admin page
+2019-03-23-09-46-57: adminadmin visited admin page
+2019-03-23-09-47-01: adminadmin visited admin page
+2019-03-23-09-47-15: adminadmin visited admin page
+2019-03-23-09-47-51: adminadmin visited admin page
+2019-03-23-09-47-51: adminadmin visited admin page
+2019-03-23-09-48-09: adminadmin visited admin page
+2019-03-23-09-48-13: adminadmin visited admin page
+2019-03-23-09-48-35: adminadmin visited admin page
+2019-03-23-09-48-50: adminadmin visited admin page
+2019-03-23-09-49-42: adminadmin visited admin page
+2019-03-23-09-49-46: adminadmin visited admin page
+2019-03-23-09-49-50: adminadmin visited admin page
+2019-03-23-09-49-53: adminadmin visited admin page
+2019-03-23-09-49-57: adminadmin visited admin page
+2019-03-23-09-50-58: adminadmin visited admin page
+2019-03-23-09-51-00: adminadmin visited admin page
+2019-03-23-09-51-03: adminadmin visited admin page
+2019-03-23-09-51-16: adminadmin visited admin page
+2019-03-23-10-00-49: adminadmin visited admin page
+2019-03-23-10-01-01: adminadmin visited admin page
+2019-03-23-10-01-08: adminadmin visited admin page
+2019-03-23-10-01-14: adminadmin visited admin page
+2019-03-23-10-01-58: adminadmin visited admin page
+2019-03-23-10-02-03: adminadmin visited admin page
+2019-03-23-10-02-10: adminadmin visited admin page
+2019-03-23-10-09-38: adminadmin visited admin page
+2019-03-23-10-11-20: adminadmin visited admin page
+2019-03-23-10-11-23: adminadmin visited admin page
+2019-03-23-10-11-30: adminadmin visited admin page
+2019-03-23-10-11-41: adminadmin visited admin page
+2019-03-23-10-14-29: adminadmin visited admin page
+2019-03-23-10-16-50: adminadmin visited admin page
+2019-03-23-10-16-55: adminadmin visited admin page
+2019-03-23-10-17-01: adminadmin visited admin page
+2019-03-23-10-21-58: adminadmin visited admin page
+2019-03-23-10-22-06: adminadmin visited admin page
+2019-03-23-10-22-21: adminadmin visited admin page
+2019-03-23-10-22-25: adminadmin visited admin page
+2019-03-23-10-22-37: adminadmin visited admin page
+2019-03-23-10-22-41: adminadmin visited admin page
+2019-03-23-10-22-43: adminadmin visited admin page
+2019-03-23-10-22-48: adminadmin visited admin page
+2019-03-23-10-22-55: adminadmin visited admin page
+2019-03-23-10-22-58: adminadmin visited admin page
+2019-03-23-10-59-41: adminadmin visited admin page
+2019-03-23-10-59-51: adminadmin visited admin page
+2019-03-23-11-00-24: adminadmin visited admin page
+2019-03-23-11-01-33: adminadmin visited admin page
+2019-03-23-11-05-32: adminadmin visited admin page
+2019-03-23-11-05-56: adminadmin visited admin page
+2019-03-23-11-06-01: adminadmin visited admin page
+2019-03-23-11-06-10: adminadmin visited admin page
+2019-03-23-11-06-16: adminadmin visited admin page
+2019-03-23-11-06-27: adminadmin visited admin page
+2019-03-23-11-06-32: adminadmin visited admin page
+2019-03-23-11-06-36: adminadmin visited admin page
+2019-03-23-11-06-40: adminadmin visited admin page
+2019-03-23-11-06-43: adminadmin visited admin page
+2019-03-23-11-06-50: adminadmin visited admin page
+2019-03-23-11-06-55: adminadmin visited admin page
+2019-03-23-11-06-58: adminadmin visited admin page
+2019-03-23-11-07-01: adminadmin visited admin page
+2019-03-23-11-07-08: adminadmin visited admin page
+2019-03-23-11-07-23: adminadmin visited admin page
+2019-03-23-11-07-30: adminadmin visited admin page
+2019-03-23-11-07-32: adminadmin visited admin page
+2019-03-23-11-07-43: adminadmin visited admin page
+2019-03-23-11-07-45: adminadmin visited admin page
+2019-03-23-11-08-02: adminadmin visited admin page
+2019-03-23-11-08-10: adminadmin visited admin page
+2019-03-23-11-08-55: adminadmin visited admin page
+2019-03-23-11-08-57: adminadmin visited admin page
+2019-03-23-11-08-59: adminadmin visited admin page
+2019-03-23-11-09-00: adminadmin visited admin page
+2019-03-23-11-09-03: adminadmin visited admin page
+2019-03-23-11-09-05: adminadmin visited admin page
+2019-03-23-11-09-24: adminadmin visited admin page
+2019-03-23-11-09-27: adminadmin visited admin page
+2019-03-23-11-09-32: adminadmin visited admin page
+2019-03-23-11-09-36: adminadmin visited admin page
+2019-03-23-11-09-47: adminadmin visited admin page
+2019-03-23-11-09-52: adminadmin visited admin page
+2019-03-23-11-10-00: adminadmin visited admin page
+2019-03-23-11-21-44: adminadmin visited admin page
+2019-03-23-11-23-03: adminadmin visited admin page
+2019-03-23-11-23-03: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'server_league.name AS League,
+                          server_season.year AS Se' at line 2
+2019-03-23-11-25-30: adminadmin visited admin page
+2019-03-23-11-25-30: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'server_league.name AS League,
+                          server_season.year AS Se' at line 2
+2019-03-23-11-25-31: adminadmin visited admin page
+2019-03-23-11-25-31: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'server_league.name AS League,
+                          server_season.year AS Se' at line 2
+2019-03-23-11-25-48: adminadmin visited admin page
+2019-03-23-11-25-48: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'server_slseason.sport' in 'where clause'
+2019-03-23-11-26-53: adminadmin visited admin page
+2019-03-23-11-27-31: adminadmin visited admin page
+2019-03-23-11-30-33: adminadmin visited admin page
+2019-03-23-11-30-38: adminadmin visited admin page
+2019-03-23-11-30-41: adminadmin visited admin page
+2019-03-23-11-30-46: adminadmin visited admin page
+2019-03-23-11-35-46: adminadmin visited admin page
+2019-03-23-11-37-46: adminadmin visited admin page
+2019-03-23-11-38-15: adminadmin visited admin page
+2019-03-23-11-38-15: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'server_season.year AS Season,
+                          FROM server_sport, serve' at line 6
+2019-03-23-11-38-23: adminadmin visited admin page
+2019-03-23-11-39-17: adminadmin visited admin page
+2019-03-23-11-40-24: adminadmin visited admin page
+2019-03-23-11-40-47: ritparent logged in
+2019-03-23-11-40-47: ritparent visited team page
+2019-03-23-11-41-28: adminadmin visited admin page
+2019-03-23-11-42-53: adminadmin visited admin page
+2019-03-23-11-43-21: adminadmin visited admin page
+2019-03-23-11-43-24: adminadmin visited admin page
+2019-03-23-11-44-01: adminadmin visited admin page
+2019-03-23-11-44-04: adminadmin visited admin page
+2019-03-23-11-44-11: adminadmin visited admin page
+2019-03-23-11-46-07: adminadmin visited admin page
+2019-03-23-11-47-53: adminadmin visited admin page
+2019-03-23-11-47-57: adminadmin visited admin page
+2019-03-23-11-49-04: adminadmin visited admin page
+2019-03-23-11-49-09: adminadmin visited admin page
+2019-03-23-11-49-13: adminadmin visited admin page
+2019-03-23-11-50-46: adminadmin visited admin page
+2019-03-23-11-50-48: adminadmin visited admin page
+2019-03-23-12-06-05: adminadmin visited admin page
+2019-03-23-12-06-08: adminadmin visited admin page
+2019-03-23-12-06-28: adminadmin visited admin page
+2019-03-23-12-06-42: adminadmin visited admin page
+2019-03-23-12-06-46: adminadmin visited admin page
+2019-03-23-12-10-07: adminadmin visited admin page
+2019-03-23-12-13-38: adminadmin visited admin page
+2019-03-23-12-18-10: adminadmin visited admin page
+2019-03-23-12-27-04: adminadmin visited admin page
+2019-03-23-12-47-45: adminadmin visited admin page
+2019-03-23-12-47-54: adminadmin visited admin page
+2019-03-23-12-49-11: adminadmin visited admin page
+2019-03-23-12-50-10: adminadmin visited admin page
+2019-03-23-12-51-36: adminadmin visited admin page
+2019-03-23-12-51-41: adminadmin visited admin page
+2019-03-23-12-52-01: adminadmin visited admin page
+2019-03-23-12-52-04: adminadmin visited schedule page
+2019-03-23-12-52-05: adminadmin visited team page
+2019-03-23-12-52-07: adminadmin visited admin page
+2019-03-23-12-52-10: adminadmin visited team page
+2019-03-23-12-52-18: adminadmin visited admin page
+2019-03-23-13-00-23: adminadmin visited admin page
+2019-03-23-13-07-54: adminadmin visited admin page
+2019-03-23-13-08-01: adminadmin visited admin page
+2019-03-23-13-08-25: adminadmin visited admin page
+2019-03-23-13-08-51: adminadmin visited admin page
+2019-03-23-13-08-54: adminadmin visited admin page
+2019-03-23-13-11-53: adminadmin visited admin page
+2019-03-23-13-12-03: adminadmin visited admin page
+2019-03-23-13-12-30: adminadmin visited admin page
+2019-03-23-13-30-30: adminadmin visited admin page
+2019-03-23-13-30-42: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'season = '4' WHERE sport = '2', league = '2' season = '4'' at line 2
+2019-03-23-13-30-42: adminadmin visited admin page
+2019-03-23-13-33-17: adminadmin visited admin page
+2019-03-23-13-33-23: adminadmin visited admin page
+2019-03-23-13-33-49: adminadmin visited admin page
+2019-03-23-13-34-13: adminadmin visited admin page
+2019-03-23-13-34-44: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'season = '4' WHERE sport = '2', league = '2' season = '4'' at line 2
+2019-03-23-13-34-44: adminadmin visited admin page
+2019-03-23-13-39-18: adminadmin visited admin page
+2019-03-23-13-43-22: adminadmin visited admin page
+2019-03-23-13-44-33: ritparent logged in
+2019-03-23-13-44-33: ritparent visited team page
+2019-03-23-13-44-37: ritparent visited schedule page
+2019-03-23-13-44-37: ritparent visited team page
+2019-03-23-13-45-05: adminadmin visited admin page
+2019-03-23-13-47-28: adminadmin visited admin page
+2019-03-23-13-47-36: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'season = '4' WHERE sport = '2', league = '2' season = '1'' at line 2
+2019-03-23-13-47-36: adminadmin visited admin page
+2019-03-23-13-49-08: adminadmin visited admin page
+2019-03-23-13-49-16: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'season = '4' WHERE sport = '2' AND league = '2' AND season = '1'' at line 2
+2019-03-23-13-49-16: adminadmin visited admin page
+2019-03-23-13-49-50: adminadmin visited admin page
+2019-03-23-13-49-56: adminadmin visited admin page
+2019-03-23-13-51-48: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'
+2019-03-23-13-51-48: adminadmin visited admin page
+2019-03-23-13-52-40: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2019-03-23-13-52-40: adminadmin visited admin page
+2019-03-23-13-52-56: adminadmin visited admin page
+2019-03-23-13-52-58: adminadmin visited admin page
+2019-03-23-13-53-08: adminadmin visited admin page
+2019-03-23-13-53-11: adminadmin visited admin page
+2019-03-23-14-14-26: adminadmin visited admin page
+2019-03-23-14-15-11: adminadmin visited admin page
+2019-03-23-14-15-34: adminadmin visited admin page
+2019-03-23-14-15-41: adminadmin visited admin page
+2019-03-23-14-16-08: adminadmin visited admin page
+2019-03-23-14-18-05: adminadmin visited team page
+2019-03-23-14-18-07: adminadmin visited admin page
+2019-03-23-14-21-34: adminadmin visited admin page
+2019-03-23-14-21-44: adminadmin visited admin page
+2019-03-23-14-21-57: adminadmin visited admin page
+2019-03-23-14-22-16: adminadmin visited admin page
+2019-03-23-14-23-35: adminadmin visited admin page
+2019-03-23-14-27-05: adminadmin visited admin page
+2019-03-23-14-27-19: adminadmin visited admin page
+2019-03-23-14-28-20: adminadmin visited admin page
+2019-03-23-14-28-35: adminadmin visited admin page
+2019-03-23-14-36-33: adminadmin visited admin page
+2019-03-23-15-43-55: adminadmin visited admin page
+2019-03-23-15-46-51: adminadmin visited admin page
+2019-03-23-15-47-06: adminadmin visited admin page
+2019-03-23-17-49-56: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2019-03-23-17-49-56: adminadmin visited admin page
+2019-03-23-17-50-05: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2019-03-23-17-50-05: adminadmin visited admin page
+2019-03-23-17-50-11: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2019-03-23-17-50-12: adminadmin visited admin page
+2019-03-23-17-53-04: adminadmin visited admin page
+2019-03-23-17-53-09: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sfm2686`.`server_team`, CONSTRAINT `slsFK` FOREIGN KEY (`sport`, `league`, `season`) REFERENCES `server_slseason` (`sport`, `league`, `season`) ON DELETE CASCADE ON UPDATE CASCADE)
+2019-03-23-17-53-09: adminadmin visited admin page
+2019-03-23-17-59-38: adminadmin visited admin page
+2019-03-23-18-07-46: adminadmin visited admin page
+2019-03-23-18-10-05: adminadmin visited admin page
+2019-03-23-18-11-20: adminadmin visited admin page
+2019-03-23-18-11-27: adminadmin visited admin page
+2019-03-23-18-15-59: adminadmin visited admin page
+2019-03-23-18-16-11: adminadmin visited admin page
+2019-03-23-18-20-16: adminadmin visited admin page
+2019-03-23-18-32-05: adminadmin visited admin page
+2019-03-23-18-55-48: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sfm2686`.`server_team`, CONSTRAINT `slsFK` FOREIGN KEY (`sport`, `league`, `season`) REFERENCES `server_slseason` (`sport`, `league`, `season`) ON DELETE CASCADE ON UPDATE CASCADE)
+2019-03-23-18-55-58: adminadmin visited admin page
+2019-03-23-18-56-19: adminadmin visited admin page
+2019-03-23-18-56-31: adminadmin visited admin page
+2019-03-23-19-03-22: adminadmin visited admin page
+2019-03-23-19-05-24: adminadmin visited admin page
+2019-03-23-19-05-31: adminadmin visited admin page
+2019-03-23-19-05-51: adminadmin visited admin page
+2019-03-23-19-05-56: adminadmin visited admin page
+2019-03-23-19-06-00: adminadmin visited admin page
+2019-03-23-19-06-06: adminadmin visited admin page
+2019-03-23-19-06-17: adminadmin visited admin page
+2019-03-23-19-06-37: adminadmin visited admin page
+2019-03-23-19-08-56: adminadmin visited admin page
+2019-03-23-19-18-50: adminadmin visited admin page
+2019-03-23-19-19-57: adminadmin visited admin page
+2019-03-23-19-21-16: adminadmin visited admin page
+2019-03-23-19-21-26: adminadmin visited admin page
+2019-03-23-19-21-58: adminadmin visited admin page
+2019-03-23-19-23-02: adminadmin visited admin page
+2019-03-23-19-25-09: adminadmin visited admin page
+2019-03-23-19-25-09: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.
+                          League.name AS League,
+                          Lea' at line 3
+2019-03-23-19-25-16: adminadmin visited admin page
+2019-03-23-19-25-16: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.
+                          League.name AS League,
+                          Lea' at line 3
+2019-03-23-19-26-16: adminadmin visited admin page
+2019-03-23-19-28-12: adminadmin visited admin page
+2019-03-23-19-34-08: adminadmin visited admin page
+2019-03-23-19-34-09: adminadmin visited admin page
+2019-03-23-19-34-10: adminadmin visited admin page
+2019-03-23-19-34-10: adminadmin visited admin page
+2019-03-23-19-34-10: adminadmin visited admin page
+2019-03-23-19-34-11: adminadmin visited admin page
+2019-03-23-19-34-11: adminadmin visited admin page
+2019-03-23-19-55-44: adminadmin visited admin page
+2019-03-23-20-08-01: adminadmin visited admin page
+2019-03-23-20-12-06: adminadmin visited admin page
+2019-03-23-20-12-13: adminadmin visited admin page
+2019-03-23-20-15-03: adminadmin visited admin page
+2019-03-23-20-15-21: adminadmin visited admin page
+2019-03-23-20-15-24: adminadmin visited admin page
+2019-03-23-20-15-29: adminadmin visited admin page
+2019-03-23-20-16-23: adminadmin visited admin page
+2019-03-23-20-16-34: adminadmin visited admin page
+2019-03-23-20-16-43: adminadmin visited admin page
+2019-03-23-20-17-04: adminadmin visited admin page
+2019-03-23-20-17-19: adminadmin visited admin page
+2019-03-23-20-17-38: adminadmin visited admin page
+2019-03-23-20-20-33: adminadmin visited admin page
+2019-03-23-20-24-05: adminadmin visited admin page
+2019-03-23-20-45-36: adminadmin visited admin page
+2019-03-23-20-46-19: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' season = '1', league = '1', hometeam = '8',
+          awayteam = '3'' at line 4
+2019-03-23-20-46-24: adminadmin visited admin page
+2019-03-23-20-55-21: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' season = '1', league = '1', hometeam = '8',
+          awayteam = '3'' at line 4
+2019-03-23-20-59-47: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' season = '1', league = '1', hometeam = '8',
+          awayteam = '3'' at line 11
+2019-03-23-21-02-40: adminadmin visited admin page
+2019-03-23-21-03-04: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-21-03-23: adminadmin visited admin page
+2019-03-23-21-04-23: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sfm2686`.`server_schedule`, CONSTRAINT `schslseasonFK` FOREIGN KEY (`sport`, `league`, `season`) REFERENCES `server_slseason` (`sport`, `league`, `season`) ON DELETE CASCADE ON UPDATE CASCADE)
+2019-03-23-21-04-25: adminadmin visited admin page
+2019-03-23-21-05-07: adminadmin visited admin page
+2019-03-23-21-05-12: adminadmin visited admin page
+2019-03-23-21-05-15: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+    AND awayteam = '8'' at line 5
+2019-03-23-21-05-15: adminadmin visited admin page
+2019-03-23-21-05-19: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+    AND awayteam = '8'' at line 5
+2019-03-23-21-05-19: adminadmin visited admin page
+2019-03-23-21-05-29: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+    AND awayteam = '8'' at line 5
+2019-03-23-21-05-29: adminadmin visited admin page
+2019-03-23-21-05-37: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+    AND awayteam = '8'' at line 5
+2019-03-23-21-05-37: adminadmin visited admin page
+2019-03-23-21-06-18: adminadmin visited admin page
+2019-03-23-21-06-21: adminadmin visited admin page
+2019-03-23-21-06-31: adminadmin visited admin page
+2019-03-23-21-07-27: adminadmin visited admin page
+2019-03-23-21-07-29: adminadmin visited admin page
+2019-03-23-21-07-38: adminadmin visited admin page
+2019-03-23-21-07-59: adminadmin visited admin page
+2019-03-23-21-08-34: adminadmin visited admin page
+2019-03-23-21-09-16: adminadmin visited admin page
+2019-03-23-21-09-31: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' season = '1', league = '1', hometeam = '8',
+          awayteam = '3'' at line 11
+2019-03-23-21-09-34: adminadmin visited admin page
+2019-03-23-21-13-05: adminadmin visited admin page
+2019-03-23-21-13-15: adminadmin visited admin page
+2019-03-23-21-17-10: adminadmin visited admin page
+2019-03-23-21-17-22: adminadmin visited admin page
+2019-03-23-21-17-31: adminadmin visited admin page
+2019-03-23-21-17-49: adminadmin visited admin page
+2019-03-23-21-18-35: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sfm2686`.`server_schedule`, CONSTRAINT `schslseasonFK` FOREIGN KEY (`sport`, `league`, `season`) REFERENCES `server_slseason` (`sport`, `league`, `season`) ON DELETE CASCADE ON UPDATE CASCADE)
+2019-03-23-21-18-35: adminadmin visited admin page
+2019-03-23-21-19-40: adminadmin visited admin page
+2019-03-23-21-26-30: adminadmin visited admin page
+2019-03-23-21-26-45: adminadmin visited admin page
+2019-03-23-21-26-53: adminadmin visited admin page
+2019-03-23-21-27-04: adminadmin visited admin page
+2019-03-23-21-29-37: adminadmin visited admin page
+2019-03-23-21-29-53: adminadmin visited admin page
+2019-03-23-21-30-03: adminadmin visited admin page
+2019-03-23-21-32-24: adminadmin visited admin page
+2019-03-23-21-32-33: adminadmin visited admin page
+2019-03-23-21-32-38: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Wingers' WHERE id = '5'' at line 1
+2019-03-23-21-32-38: adminadmin visited admin page
+2019-03-23-21-35-06: adminadmin visited admin page
+2019-03-23-21-35-10: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''winger' WHERE id = '5'' at line 1
+2019-03-23-21-35-10: adminadmin visited admin page
+2019-03-23-21-35-19: adminadmin visited admin page
+2019-03-23-21-35-22: adminadmin visited admin page
+2019-03-23-21-35-28: adminadmin visited admin page
+2019-03-23-21-42-10: adminadmin visited admin page
+2019-03-23-21-42-27: adminadmin visited admin page
+2019-03-23-21-42-39: adminadmin visited admin page
+2019-03-23-21-48-54: adminadmin visited admin page
+2019-03-23-21-48-55: adminadmin visited admin page
+2019-03-23-21-48-56: adminadmin visited admin page
+2019-03-23-21-49-28: adminadmin visited admin page
+2019-03-23-21-50-16: adminadmin visited admin page
+2019-03-23-21-50-18: adminadmin visited admin page
+2019-03-23-21-53-36: adminadmin visited admin page
+2019-03-23-21-55-05: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id = '5'' at line 9
+2019-03-23-21-55-22: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id = '5'' at line 9
+2019-03-23-21-55-58: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+2019-03-23-21-56-00: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+2019-03-23-22-01-32: adminadmin visited admin page
+2019-03-23-22-01-52: adminadmin visited admin page
+2019-03-23-22-06-50: adminadmin visited admin page
+2019-03-23-22-07-08: adminadmin visited admin page
+2019-03-23-22-18-10: adminadmin visited admin page
+2019-03-23-22-18-36: adminadmin visited admin page
+2019-03-23-22-20-25: adminadmin visited admin page
+2019-03-23-22-20-46: adminadmin visited admin page
+2019-03-23-22-21-05: adminadmin visited admin page
+2019-03-23-22-21-19: adminadmin visited admin page
+2019-03-23-22-21-26: adminadmin visited team page
+2019-03-23-22-21-30: adminadmin visited team page
+2019-03-23-22-21-30: adminadmin visited schedule page
+2019-03-23-22-21-32: adminadmin visited team page
+2019-03-23-22-21-37: adminadmin logged out
+2019-03-23-22-21-41: adminadmin logged in
+2019-03-23-22-21-42: adminadmin visited team page
+2019-03-23-22-21-42: adminadmin visited team page
+2019-03-23-22-21-43: adminadmin visited team page
+2019-03-23-22-21-44: adminadmin visited schedule page
+2019-03-23-22-21-45: adminadmin visited admin page
+2019-03-23-22-21-51: adminadmin visited team page

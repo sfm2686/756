@@ -30,7 +30,7 @@
   if ($_SESSION['role'] == ADMIN_ROLE) {
     $controller = new AdminLevel();
   } // ADMIN ROLE
-  $controller->display_admin_data();
+  echo $controller->display_admin_data();
 
   endblock();
   //
@@ -226,15 +226,3 @@
 
   // echo $display;
 ?>
-<script>
-  function mod_view(href, element) {
-    xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById(element.id).innerHTML = this.responseText;
-        }
-    };
-    xmlhttp.open("GET", href, true);
-    xmlhttp.send();
-  }
-</script>

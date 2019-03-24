@@ -1,8 +1,8 @@
 <?php
   include_once dirname(__FILE__) . '/../base.php';
-  include_once BASE_PATH . '/controllers/UserController.class.php';
+  include_once BASE_PATH . '/controllers/DataByRole.class.php';
   include_once BASE_PATH . '/PDO_DB.class.php';
-  include_once BASE_PATH. '/model/season.class.php';
+  include_once BASE_PATH . '/model/season.class.php';
 
   startblock('title');
   echo "Edit Season";
@@ -17,10 +17,11 @@
     exit();
   }
 
-  $new = isset($_GET['id']) ? false : true;
+  $new = isset($_GET['ID']) ? false : true;
 
   if (!$new) {
-    $data = UserController::get_seasons($_GET['id']);
+    $filtered_id = filter_var($_GET['ID'], FILTER_SANITIZE_NUMBER_INT);
+    $data = DataByRole::get_season($filtered_id);
 
     if (!$data) {
       echo "<div class='alert alert-danger' role='alert'>Sport not found</div>";
@@ -36,30 +37,37 @@
     header("Location: " . ADMIN_PAGE);
   }
   if (isset($_POST['save'])) {
-    if ($new && isset($_POST['sport'])) { // BRAND NEW ENTRY
-      if (Sport::validate_name($_POST['sport'])) {
+    if (isset($_POST['s_year']) && Season::validate_year($_POST['s_year'])
+        && isset($_POST['s_desc']) && Season::validate_desc($_POST['s_desc'])) {
+      $year = filter_var($_POST['s_year'], FILTER_SANITIZE_STRING);
+      $desc = filter_var($_POST['s_desc'], FILTER_SANITIZE_STRING);
+      if ($new) { // INSERT TO DB
         $values = array(
-          "name" => filter_var($_POST['sport'], FILTER_SANITIZE_STRING)
+          "year" => $year,
+          "description" => $desc
         );
-        PDO_DB::getInstance()->insert("server_sport", $values);
+        PDO_DB::getInstance()->insert("server_season", $values);
         header("Location: " . ADMIN_PAGE);
-      } else { // invalid
-        $err_msg = "Invalid sport name";
+      } else { // UPDATE DB
+        $query = "UPDATE server_season SET year = :year, description = :des WHERE id = :id";
+        $values = array(
+          ":year" => $year,
+          ":des" => $desc,
+          ":id" => $data[0]->__get('ID')
+        );
+        PDO_DB::getInstance()->update($query, $values);
+        header("Location: " . ADMIN_PAGE);
       }
-    } else { // UPDATE ENTRY
-      $query = "UPDATE server_sport SET id = :id";
-      $values = array(
-        ":id" => $data[0]['ID']
-      );
-      PDO_DB::getInstance()->update($query, $values);
-      header("Location: " . ADMIN_PAGE);
+    } else { // invalid or not set
+      $err_msg = "Year can only take 4 characters of letters and numbers,
+      description can be between 6 and 50 characters of letters and numbers";
     }
   }
 
   if (isset($_POST['delete'])) { // DELETE ENTRY
-    $query = "DELETE FROM server_sport WHERE id = :id";
+    $query = "DELETE FROM server_season WHERE id = :id";
     $values = array(
-      ":id" => $data[0]['ID']
+      ":id" => $data[0]->__get('ID')
     );
     PDO_DB::getInstance()->delete($query, $values);
     header("Location: " . ADMIN_PAGE);
@@ -72,31 +80,26 @@
   <form method="POST" class="form-group">
     <?php
       if (!$new) {
-        $id = $data[0]['ID'];
+        $id = $data[0]->__get('ID');
         echo "<label>ID</label>";
-        echo "<input name='sport' value=$id type='text' class='form-control' disabled>";
+        echo "<input value=$id type='text' class='form-control' disabled>";
       }
     ?>
     <br>
     <label>Year</label>
-    <input name="year" onkeyup="validate('<?= JS_VALIDATOR_PATH ?>', this, y_feedback_div)"
+    <input name="s_year" onkeyup="validate('<?= JS_VALIDATOR_PATH ?>', this, y_feedback_div)"
     <?php
       if (!$new) {
-        echo "value='" . $data[0]['Year'] . "'";
+        echo "value='" . $data[0]->__get('Year') . "'";
       }
     ?>
     type="text" class="form-control">
     <div id='y_feedback_div'></div>
     <br>
     <label>Description</label>
-    <textarea name="year" onkeyup="validate('<?= JS_VALIDATOR_PATH ?>', this, y_feedback_div)"
-    <?php
-      if (!$new) {
-        echo "value='" . $data[0]['Year'] . "'";
-      }
-    ?>
-    type="text" class="form-control">
-    <div id='y_feedback_div'></div>
+    <textarea name="s_desc" onkeyup="validate('<?= JS_VALIDATOR_PATH ?>', this, d_feedback_div)"
+    type="text" class="form-control"><?= $new ? "" : $data[0]->__get('Description') ?></textarea>
+    <div id='d_feedback_div'></div>
     <?php
       if ($new) {
         echo "<button name='save' type='submit' class='btn btn-default'>Save Season</button>";

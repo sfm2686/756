@@ -3,7 +3,7 @@
 class Sport {
 
   const MAX_NAME = 50;
-  const MIN_NAME = 4;
+  const MIN_NAME = 4;  // randomly selected number (shortest sport is 'golf'..)
 
   public static function validate_name($sport) {
     if (strlen($sport) > Sport::MAX_NAME || strlen($sport) < Sport::MIN_NAME) {

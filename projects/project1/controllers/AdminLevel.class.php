@@ -1,62 +1,69 @@
 <?php
   include_once 'UserController.class.php';
+  include_once 'DataByRole.class.php';
 
   class AdminLevel extends UserController {
 
-    private function display_user_editable_table() {
-      $div_id = "users_div";
-      $display = "<div class='container' id='" . $div_id . "'>";
-      $data = parent::get_all_users();
-      $title = "Users";
-      if ($data) {
-        // permission to access user edit
-        $_SESSION['user_edit'] = true;
-        $display .= $this->display_editable($data, $title, "edit_pages/edit_users.php", "Username", $div_id);
-      } else {
-        $display .= "<p class='text-danger'>No users were found on record</p>";
-      }
-      $display .= "</div><br><br><br>";
-      return $display;
-    }
-
-    private function display_sports_editable_table() {
-      $div_id = "sports_div";
-      $display = "<div class='container' id='" . $div_id . "'>";
-      $data = parent::get_all_sports();
-      $title = "Sports";
-      if ($data) {
-        // permission to access user edit
-        $_SESSION['sports_edit'] = true;
-        $display .= $this->display_editable($data, $title, "edit_pages/edit_sports.php", "ID", $div_id);
-      } else {
-        $display .= "<p class='text-danger'>No sports were found on record</p>";
-      }
-      $display .= "</div><br><br><br>";
-      return $display;
-    }
-
-    private function display_seasons_editable_table() {
-      $div_id = "seasons_div";
-      $display = "<div class='container' id='" . $div_id . "'>";
-      $data = parent::get_all_seasons();
-      $title = "Seasons";
-      if ($data) {
-        // permission to access user edit
-        $_SESSION['seasons_edit'] = true;
-        $display .= $this->display_editable($data, $title, "edit_pages/edit_seasons.php", "ID", $div_id);
-      } else {
-        $display .= "<p class='text-danger'>No seasons were found on record</p>";
-      }
-      $display .= "</div><br><br><br>";
-      return $display;
-    }
-
     public function display_admin_data() {
-      $display = $this->display_user_editable_table();
-      $display .= $this->display_sports_editable_table();
-      $display .= $this->display_seasons_editable_table();
+      // Users table
+      $data = DataByRole::get_all_users();
+      // edit permission
+      $_SESSION['user_edit'] = true;
+      $edit_page = "edit_pages/edit_users.php";
+      $display = $this->display_editable($data=$data, $title="Users", $link=$edit_page, $id=array("Username"));
 
-      echo $display;
+      // Sports table
+      $data = DataByRole::get_all_sports();
+      // edit permission
+      $_SESSION['sports_edit'] = true;
+      $edit_page = "edit_pages/edit_sports.php";
+      $display .= $this->display_editable($data=$data, $title="Sports", $link=$edit_page, $id=array("ID"));
+
+      // Seasons table
+      $data = DataByRole::get_all_seasons();
+      // edit permission
+      $_SESSION['seasons_edit'] = true;
+      $edit_page = "edit_pages/edit_seasons.php";
+      $display .= $this->display_editable($data=$data, $title="Seasons", $link=$edit_page, $id=array("ID"));
+
+      // SLSeasons table
+      $data = DataByRole::get_all_slseasons();
+      // edit permission
+      $_SESSION['slseasons_edit'] = true;
+      $edit_page = "edit_pages/edit_slseasons.php";
+      $ids = array("Sport ID", "Season ID", "League ID");
+      $display .= $this->display_editable($data=$data, $title="SLSeasons", $link=$edit_page, $id=$ids);
+
+      // Teams table
+      $data = DataByRole::get_all_teams();
+      // edit permission
+      $_SESSION['teams_edit'] = true;
+      $edit_page = "edit_pages/edit_teams.php";
+      $display .= $this->display_editable($data=$data, $title="Teams", $link=$edit_page, $id=array("ID"));
+
+      // Schedules table
+      $data = DataByRole::get_all_schedules();
+      // edit permission
+      $_SESSION['sch_edit'] = true;
+      $edit_page = "edit_pages/edit_schedules.php";
+      $ids = array("Sport ID", "Season ID", "League ID", "Away ID", "Home ID");
+      $display .= $this->display_editable($data=$data, $title="Schedules", $link=$edit_page, $id=$ids);
+
+      // Positions table
+      $data = DataByRole::get_all_pos();
+      // edit permission
+      $_SESSION['pos_edit'] = true;
+      $edit_page = "edit_pages/edit_pos.php";
+      $display .= $this->display_editable($data=$data, $title="Positions", $link=$edit_page, $id=array("ID"));
+
+      // Players table
+      $data = DataByRole::get_all_players();
+      // edit permission
+      $_SESSION['player_edit'] = true;
+      $edit_page = "edit_pages/edit_player.php";
+      $display .= $this->display_editable($data=$data, $title="Players", $link=$edit_page, $id=array("ID"));
+
+      return $display;
   }
 
   public function display_team_data(){;}

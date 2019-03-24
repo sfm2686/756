@@ -1,8 +1,8 @@
 <?php
   include_once dirname(__FILE__) . '/../base.php';
-  include_once dirname(__FILE__) . '/../controllers/UserController.class.php';
-  include_once dirname(__FILE__) . '/../model/user.class.php';
-  include_once dirname(__FILE__) . '/../PDO_DB.class.php';
+  include_once BASE_PATH . '/controllers/DataByRole.class.php';
+  include_once BASE_PATH . '/PDO_DB.class.php';
+  include_once BASE_PATH . '/model/user.class.php';
 
   startblock('title');
   echo "Edit User";
@@ -17,10 +17,11 @@
     exit();
   }
 
-  $new_user = isset($_GET['id']) ? false : true;
+  $new_user = isset($_GET['Username']) ? false : true;
 
   if (!$new_user) {
-    $data = UserController::get_user($_GET['id']);
+    $filtered_id = filter_var($_GET['Username'], FILTER_SANITIZE_STRING);
+    $data = DataByRole::get_user($filtered_id);
 
     if (!$data) {
       echo "<div class='alert alert-danger' role='alert'>User not found</div>";
@@ -29,9 +30,9 @@
     }
   }
 
-  $roles_data = UserController::get_all_roles();
-  $league_data = UserController::get_all_leagues();
-  $team_data = UserController::get_all_teams();
+  $roles_data = DataByRole::get_all_roles();
+  $league_data = DataByRole::get_all_leagues();
+  $team_data = DataByRole::get_all_teams();
 
   $err_msg = "";
 
