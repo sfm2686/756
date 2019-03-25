@@ -10,7 +10,7 @@
       if (strlen($username) > User::MAX_USERNAME || strlen($username) < User::MIN_USERNAME) {
         return false;
       }
-      if (!preg_match('/^[a-zA-Z0-9\s]+$/', $username)) {
+      if (!preg_match('/^[a-zA-Z0-9]+$/', $username)) {
         return false;
       }
       return true;

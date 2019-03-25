@@ -24,7 +24,7 @@
     $data = DataByRole::get_season($filtered_id);
 
     if (!$data) {
-      echo "<div class='alert alert-danger' role='alert'>Sport not found</div>";
+      echo "<div class='alert alert-danger' role='alert'>No data found</div>";
       endblock();
       exit();
     }

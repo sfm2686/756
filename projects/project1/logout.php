@@ -6,6 +6,8 @@
   $msg = $_SESSION['username'] . " logged out";
   Log::record_log($msg);
 
+  $_SESSION['loggedin'] = false;
+
   // cleaning the session
   unset($_SESSION['loggedin']);
   unset($_SESSION['username']);
@@ -13,7 +15,7 @@
   unset($_SESSION['team']);
   unset($_SESSION['league']);
   session_destroy();
-  
+
   // redirecting  to login page
   header("Location: login.php");
 

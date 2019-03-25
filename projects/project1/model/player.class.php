@@ -22,8 +22,9 @@
       return true;
     }
 
+    // cannot have a jersey number larger than 2 digits or smaller than 1
     static function validate_jersey($number) {
-      if (strlen($number) > 45 || strlen($number) < 2) {
+      if (strlen($number) > 2 || strlen($number) < 1) {
         return false;
       }
       if (!preg_match('/^[0-9]+$/', $number)) {

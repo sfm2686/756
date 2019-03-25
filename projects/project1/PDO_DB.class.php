@@ -52,112 +52,50 @@
       }
     }
 
-    // TODO delete
-      function get_all_objects($table = "") {
-        try {
-          $data = array();
-          $stm = $this->db->prepare("SELECT * FROM $table");
-          $stm->execute();
-          $stm->setFetchMode(PDO::FETCH_CLASS, "Model");
-          while ($obj = $stm->fetch()) {
-            $data[] = $obj;
-          }
-          return $data;
-        } catch (PDOException $e) {
-          Log::record_log($e->getMessage());
-          die();
+    function select($query ,$values = array()) {
+      try {
+        $stm = $this->db->prepare($query);
+        if ($values) {
+          foreach($values as $param => $value)
+          $stm->bindValue($param, $value);
         }
+        $stm->execute();
+        $stm->setFetchMode(PDO::FETCH_CLASS, "Model");
+
+        return $stm->fetchAll();
+      } catch (PDOException $e) {
+        Log::record_log($e->getMessage());
+        return 0;
       }
+    }
 
-      function select($query ,$values=array()) {
-        try {
-          $stm = $this->db->prepare($query);
-          if ($values) {
-            foreach($values as $param => $value)
-            $stm->bindValue($param, $value);
-          }
-          $stm->execute();
-          $stm->setFetchMode(PDO::FETCH_CLASS, "Model");
-
-          return $stm->fetchAll();
-        } catch (PDOException $e) {
-          Log::record_log($e->getMessage());
-          return 0;
+    function update($query, $values=array()) {
+      try {
+        $stm = $this->db->prepare($query);
+        if ($values) {
+          foreach($values as $param => $value)
+          $stm->bindValue($param, $value);
         }
+        $stm->execute();
+      } catch (PDOException $e) {
+        Log::record_log($e->getMessage());
+        return $this->db->errorCode();
       }
+    }
 
-      function update($query, $values=array()) {
-        try {
-          $stm = $this->db->prepare($query);
-          if ($values) {
-            foreach($values as $param => $value)
-            $stm->bindValue($param, $value);
-          }
-          $stm->execute();
-        } catch (PDOException $e) {
-          Log::record_log($e->getMessage());
-          return $this->db->errorCode();
+    function delete($query, $values) {
+      try {
+        $stm = $this->db->prepare($query);
+        if ($values) {
+          foreach($values as $param => $value)
+          $stm->bindValue($param, $value);
         }
+        $stm->execute();
+      } catch (PDOException $e) {
+        Log::record_log($e->getMessage());
+        return 0;
       }
-
-      function delete($query, $values) {
-        try {
-          $stm = $this->db->prepare($query);
-          if ($values) {
-            foreach($values as $param => $value)
-            $stm->bindValue($param, $value);
-          }
-          $stm->execute();
-        } catch (PDOException $e) {
-          Log::record_log($e->getMessage());
-          return 0;
-        }
-      }
-
-      // TODO delete
-      function get_user_by_username($username) {
-        try {
-          $stm = $this->db->prepare("SELECT * FROM server_user WHERE username = :uname");
-          $stm->bindParam(":uname", $username, PDO::PARAM_STR);
-          $stm->execute();
-          $stm->setFetchMode(PDO::FETCH_CLASS, "Model");
-          return $stm->fetchAll();
-        } catch (PDOException $e) {
-          Log::record_log($e->getMessage());
-          die();
-        }
-      }
-
-      // TODO delete
-      function get_schedules_for_user($team) {
-        try {
-          $stm = $this->db->prepare("SELECT * FROM server_schedule
-            WHERE hometeam = :team OR awayteam = :team
-            ORDER BY completed");
-          $stm->bindParam(":team", $team, PDO::PARAM_INT);
-          $stm->execute();
-          $data = $stm->fetchAll();
-          return $data;
-        } catch (PDOException $e) {
-          Log::record_log($e->getMessage());
-          die();
-        }
-      }
-
-      // TODO delete
-      function get_object_by_id($table, $id) {
-        try {
-          $stm = $this->db->prepare("SELECT * FROM $table
-            WHERE id = :id");
-          $stm->bindParam(":id", $id, PDO::PARAM_INT);
-          $stm->execute();
-          $data = $stm->fetchAll();
-          return $data;
-        } catch (PDOException $e) {
-          Log::record_log($e->getMessage());
-          die();
-        }
-      }
+    }
 
     /**
      * singleton function

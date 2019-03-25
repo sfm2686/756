@@ -14,7 +14,6 @@
   define("SCHEDULE_PAGE", BASE_URL . 'schedule.php');
   define("REGISTER_PAGE", BASE_URL . 'register.php');
 
-  define("CSS_FILE", BASE_URL . '/static/style.css?' . time());
   define("JS_FILE", BASE_URL . '/static/ajax_caller.js?' . time());
   define("JS_VALIDATOR_PATH", BASE_URL . "/ajax_validators.php");
   define("LOG_FILE", BASE_PATH . "/log.txt");
@@ -26,7 +25,7 @@
     $login_button = "Logout";
     $button_href = LOGOUT_PAGE;
   } else {
-    // ensure user logs before visting any page
+    // ensure user is loggedin before visting any page
     if ($curr_page != "login.php" && $curr_page != "register.php") {
       header("Location: " . LOGIN_PAGE);
     }
@@ -50,7 +49,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href=<?= CSS_FILE ?>>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="<?= JS_FILE ?>"></script>
@@ -97,7 +95,4 @@
     </div>
 
   </body>
-  <!-- <footer class="template-footer">
-    @copyright <?= date("Y"); ?>
-  </footer> -->
 </html>

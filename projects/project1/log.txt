@@ -511,3 +511,659 @@
 2019-03-23-22-21-44: adminadmin visited schedule page
 2019-03-23-22-21-45: adminadmin visited admin page
 2019-03-23-22-21-51: adminadmin visited team page
+2019-03-23-22-25-21: adminadmin visited team page
+2019-03-23-22-25-37: adminadmin visited admin page
+2019-03-23-22-25-41: adminadmin visited team page
+2019-03-23-22-26-23: adminadmin visited team page
+2019-03-23-22-29-31: adminadmin visited team page
+2019-03-23-22-30-12: adminadmin visited team page
+2019-03-23-22-30-40: adminadmin visited team page
+2019-03-23-22-30-53: adminadmin visited team page
+2019-03-23-22-31-19: adminadmin visited team page
+2019-03-23-22-31-36: adminadmin visited team page
+2019-03-23-22-33-08: adminadmin visited team page
+2019-03-23-22-33-20: adminadmin visited team page
+2019-03-23-22-33-43: adminadmin visited team page
+2019-03-23-22-34-00: adminadmin visited team page
+2019-03-23-22-34-29: adminadmin visited team page
+2019-03-23-22-34-30: adminadmin visited schedule page
+2019-03-23-22-35-03: adminadmin visited schedule page
+2019-03-23-22-35-24: adminadmin visited schedule page
+2019-03-23-22-35-31: adminadmin visited schedule page
+2019-03-23-22-35-36: adminadmin visited team page
+2019-03-23-22-35-37: adminadmin visited admin page
+2019-03-23-22-47-14: adminadmin logged out
+2019-03-23-22-47-20: lmanager logged in
+2019-03-23-22-47-20: lmanager visited team page
+2019-03-23-22-47-27: lmanager visited admin page
+2019-03-23-22-48-44: lmanager visited admin page
+2019-03-23-22-48-44: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-48-44: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-22-48-44: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-22-48-44: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-22-48-44: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-22-49-15: lmanager logged out
+2019-03-23-22-49-18: adminadmin logged in
+2019-03-23-22-49-18: adminadmin visited team page
+2019-03-23-22-49-20: adminadmin visited admin page
+2019-03-23-22-49-28: adminadmin logged out
+2019-03-23-22-49-33: lmanager logged in
+2019-03-23-22-49-33: lmanager visited team page
+2019-03-23-22-49-34: lmanager visited admin page
+2019-03-23-22-49-34: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-49-34: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-22-49-34: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-22-49-34: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-22-49-34: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-22-51-48: lmanager visited admin page
+2019-03-23-22-51-48: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-51-48: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-22-51-48: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-22-51-48: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-22-51-48: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-22-52-49: lmanager visited admin page
+2019-03-23-22-52-49: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-53-00: lmanager visited admin page
+2019-03-23-22-53-00: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-53-16: lmanager visited admin page
+2019-03-23-22-53-16: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-53-16: lmanager visited admin page
+2019-03-23-22-53-16: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-53-39: lmanager logged out
+2019-03-23-22-53-42: adminadmin logged in
+2019-03-23-22-53-42: adminadmin visited team page
+2019-03-23-22-53-44: adminadmin visited admin page
+2019-03-23-22-53-51: adminadmin visited admin page
+2019-03-23-22-54-01: adminadmin visited admin page
+2019-03-23-22-54-03: adminadmin logged out
+2019-03-23-22-54-34:  visited team page
+2019-03-23-22-54-38: adminadmin logged in
+2019-03-23-22-54-38: adminadmin visited team page
+2019-03-23-22-54-40: adminadmin visited admin page
+2019-03-23-22-54-54: adminadmin logged out
+2019-03-23-22-54-59: lmanager logged in
+2019-03-23-22-54-59: lmanager visited team page
+2019-03-23-22-55-02: lmanager visited admin page
+2019-03-23-22-55-02: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-55-14: lmanager visited admin page
+2019-03-23-22-55-14: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-55-31: lmanager visited admin page
+2019-03-23-22-55-31: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-55-57: lmanager visited admin page
+2019-03-23-22-55-57: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-56-06: lmanager visited admin page
+2019-03-23-22-56-06: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-56-08: lmanager visited admin page
+2019-03-23-22-56-08: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-56-14: lmanager visited admin page
+2019-03-23-22-56-14: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-56-15: lmanager visited admin page
+2019-03-23-22-56-15: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-56-16: lmanager visited team page
+2019-03-23-22-56-22: lmanager visited schedule page
+2019-03-23-22-56-23: lmanager visited admin page
+2019-03-23-22-56-23: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-57-29: lmanager visited admin page
+2019-03-23-22-57-29: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-57-44: lmanager visited admin page
+2019-03-23-22-57-44: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 8
+2019-03-23-22-58-22: lmanager visited admin page
+2019-03-23-22-58-34: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-22-58-34: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-22-58-34: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-02-53: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-02-53: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-02-53: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-04-57: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-04-57: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-04-57: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-05-07: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-05-07: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-05-07: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-05-07: lmanager visited admin page
+2019-03-23-23-05-09: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-05-09: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-05-09: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-05-11: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-05-11: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-05-11: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-23-23-05-11: lmanager visited admin page
+2019-03-24-12-49-29:  visited admin page
+2019-03-24-12-49-34: lmanager logged in
+2019-03-24-12-49-34: lmanager visited team page
+2019-03-24-12-49-52: lmanager visited admin page
+2019-03-24-12-49-56: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-12-49-56: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-12-49-56: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-12-50-31: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-12-50-31: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-12-50-31: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-13-00-03: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-13-00-03: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-13-01-57: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= '1'' at line 1
+2019-03-24-13-01-57: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-13-04-08: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-13-06-42: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE server_league.id = '1'' at line 15
+2019-03-24-13-07-23: lmanager visited admin page
+2019-03-24-13-07-39: lmanager logged out
+2019-03-24-13-07-43: adminadmin logged in
+2019-03-24-13-07-43: adminadmin visited team page
+2019-03-24-13-07-44: adminadmin visited admin page
+2019-03-24-13-07-46: adminadmin visited schedule page
+2019-03-24-13-07-46: adminadmin visited team page
+2019-03-24-13-07-47: adminadmin visited admin page
+2019-03-24-13-07-48: adminadmin visited schedule page
+2019-03-24-13-07-57: adminadmin visited admin page
+2019-03-24-13-08-06: adminadmin visited admin page
+2019-03-24-13-08-08: adminadmin visited admin page
+2019-03-24-13-08-18: adminadmin visited admin page
+2019-03-24-13-08-27: adminadmin visited admin page
+2019-03-24-13-08-36: adminadmin visited admin page
+2019-03-24-13-09-39: adminadmin logged out
+2019-03-24-13-09-49: lmanager logged in
+2019-03-24-13-09-49: lmanager visited team page
+2019-03-24-13-09-51: lmanager visited admin page
+2019-03-24-13-09-59: lmanager visited admin page
+2019-03-24-13-10-05: lmanager visited admin page
+2019-03-24-13-11-46: lmanager visited admin page
+2019-03-24-13-11-46: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-13-12-59: lmanager visited admin page
+2019-03-24-13-13-14: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-13-13-32: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-13-13-33: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-13-13-39: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-13-14-50: lmanager visited admin page
+2019-03-24-13-15-10: lmanager visited admin page
+2019-03-24-13-15-48: lmanager visited admin page
+2019-03-24-13-17-24: lmanager visited admin page
+2019-03-24-13-18-01: lmanager visited admin page
+2019-03-24-13-18-25: lmanager visited admin page
+2019-03-24-13-19-15: lmanager visited admin page
+2019-03-24-13-29-12: lmanager visited admin page
+2019-03-24-13-30-11: lmanager visited admin page
+2019-03-24-13-30-12: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-13-34-42: lmanager visited admin page
+2019-03-24-13-34-53: lmanager visited admin page
+2019-03-24-13-35-02: lmanager visited admin page
+2019-03-24-13-35-10: lmanager visited admin page
+2019-03-24-13-35-49:  visited admin page
+2019-03-24-13-35-54: ritparent logged in
+2019-03-24-13-35-54: ritparent visited team page
+2019-03-24-13-35-56: ritparent visited schedule page
+2019-03-24-13-35-56: ritparent visited team page
+2019-03-24-13-38-42: lmanager visited admin page
+2019-03-24-13-40-19: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sfm2686`.`server_team`, CONSTRAINT `slsFK` FOREIGN KEY (`sport`, `league`, `season`) REFERENCES `server_slseason` (`sport`, `league`, `season`) ON DELETE CASCADE ON UPDATE CASCADE)
+2019-03-24-13-40-47: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sfm2686`.`server_team`, CONSTRAINT `slsFK` FOREIGN KEY (`sport`, `league`, `season`) REFERENCES `server_slseason` (`sport`, `league`, `season`) ON DELETE CASCADE ON UPDATE CASCADE)
+2019-03-24-13-40-49: lmanager visited admin page
+2019-03-24-13-40-59: lmanager visited admin page
+2019-03-24-13-41-13: lmanager visited admin page
+2019-03-24-13-42-29: lmanager visited admin page
+2019-03-24-13-42-59: lmanager visited admin page
+2019-03-24-13-42-59: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-13-46-57: lmanager visited admin page
+2019-03-24-13-46-57: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'league' in where clause is ambiguous
+2019-03-24-13-47-40: lmanager visited admin page
+2019-03-24-13-47-49: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-13-48-28: lmanager visited admin page
+2019-03-24-13-49-10: lmanager visited admin page
+2019-03-24-13-49-27: lmanager visited admin page
+2019-03-24-13-49-50: lmanager visited admin page
+2019-03-24-13-49-50: lmanager visited admin page
+2019-03-24-13-49-51: lmanager visited admin page
+2019-03-24-13-49-51: lmanager visited admin page
+2019-03-24-13-49-51: lmanager visited admin page
+2019-03-24-13-49-51: lmanager visited admin page
+2019-03-24-13-49-51: lmanager visited admin page
+2019-03-24-13-49-51: lmanager visited admin page
+2019-03-24-13-49-52: lmanager visited admin page
+2019-03-24-13-49-52: lmanager visited admin page
+2019-03-24-13-50-21: lmanager visited admin page
+2019-03-24-13-50-54: lmanager visited admin page
+2019-03-24-13-51-24: lmanager logged out
+2019-03-24-13-51-52: lmanager logged in
+2019-03-24-13-51-52: lmanager visited team page
+2019-03-24-13-56-35: lmanager visited team page
+2019-03-24-13-56-39: lmanager visited schedule page
+2019-03-24-13-57-18: lmanager visited schedule page
+2019-03-24-13-57-27: lmanager logged out
+2019-03-24-13-57-34: tmanager logged in
+2019-03-24-13-57-34: tmanager visited team page
+2019-03-24-13-57-36: tmanager visited admin page
+2019-03-24-13-57-37: tmanager visited team page
+2019-03-24-13-57-37: tmanager visited schedule page
+2019-03-24-13-57-38: tmanager visited admin page
+2019-03-24-14-03-09: tmanager visited admin page
+2019-03-24-14-04-35: tmanager visited admin page
+2019-03-24-14-05-39: tmanager visited admin page
+2019-03-24-14-05-39: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-14-05-39: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-14-06-12: tmanager visited admin page
+2019-03-24-14-06-12: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-14-06-12: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-14-07-38: tmanager visited admin page
+2019-03-24-14-07-38: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-14-07-38: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-14-07-54: tmanager visited admin page
+2019-03-24-14-08-56: tmanager visited admin page
+2019-03-24-14-08-59: tmanager visited admin page
+2019-03-24-14-08-59: tmanager visited admin page
+2019-03-24-14-08-59: tmanager visited admin page
+2019-03-24-14-08-59: tmanager visited admin page
+2019-03-24-14-08-59: tmanager visited admin page
+2019-03-24-14-09-28: tmanager visited admin page
+2019-03-24-14-09-31: tmanager visited admin page
+2019-03-24-14-09-34: tmanager visited admin page
+2019-03-24-14-09-36: tmanager visited admin page
+2019-03-24-14-09-39: tmanager logged out
+2019-03-24-14-09-42: tmanager logged in
+2019-03-24-14-09-42: tmanager visited team page
+2019-03-24-14-09-44: tmanager visited admin page
+2019-03-24-14-09-44: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-14-09-44: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-14-09-58: tmanager visited admin page
+2019-03-24-14-10-27: tmanager visited admin page
+2019-03-24-15-04-34: tmanager visited admin page
+2019-03-24-15-05-13: tmanager visited admin page
+2019-03-24-15-12-02: tmanager logged out
+2019-03-24-15-12-07: tmanager logged in
+2019-03-24-15-12-56: tmanager logged in
+2019-03-24-15-12-56: tmanager visited team page
+2019-03-24-15-13-15: tmanager logged out
+2019-03-24-15-13-55: tmanager logged in
+2019-03-24-15-14-03: tmanager logged in
+2019-03-24-15-14-03: tmanager visited team page
+2019-03-24-15-14-05: tmanager logged out
+2019-03-24-15-14-09: tmanager logged in
+2019-03-24-15-14-20: tmanager logged in
+2019-03-24-15-14-20: tmanager visited team page
+2019-03-24-15-14-22: tmanager visited admin page
+2019-03-24-15-14-22: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-15-14-22: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-15-14-51: tmanager visited admin page
+2019-03-24-15-14-57: tmanager visited admin page
+2019-03-24-15-15-04: tmanager logged out
+2019-03-24-15-15-12: tmanager logged in
+2019-03-24-15-15-12: tmanager visited team page
+2019-03-24-15-16-23: tmanager visited team page
+2019-03-24-15-16-30: tmanager visited admin page
+2019-03-24-15-16-30: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-15-16-30: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-15-24-33: tmanager visited admin page
+2019-03-24-15-24-33: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-15-28-32: tmanager visited admin page
+2019-03-24-15-28-32: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-15-33-32: tmanager visited admin page
+2019-03-24-15-33-32: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'server_player.team = '3'' at line 9
+2019-03-24-15-34-12: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-15-34-15: tmanager visited admin page
+2019-03-24-15-34-15: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'server_player.team = '3'' at line 9
+2019-03-24-15-35-25: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-15-43-25: tmanager visited admin page
+2019-03-24-15-43-25: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'server_player.team = '3'' at line 9
+2019-03-24-15-44-42: tmanager visited admin page
+2019-03-24-15-45-19: tmanager visited admin page
+2019-03-24-15-45-23: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-15-48-30: tmanager visited admin page
+2019-03-24-15-48-30: tmanager visited team page
+2019-03-24-15-48-31: tmanager visited admin page
+2019-03-24-15-48-42: tmanager logged out
+2019-03-24-15-48-49: coachcoach logged in
+2019-03-24-15-48-49: coachcoach visited team page
+2019-03-24-15-48-50: coachcoach visited admin page
+2019-03-24-15-48-54: coachcoach visited team page
+2019-03-24-16-03-57: coachcoach visited team page
+2019-03-24-16-04-51: coachcoach visited team page
+2019-03-24-16-04-52: coachcoach visited schedule page
+2019-03-24-16-04-52: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-16-06-33: coachcoach visited schedule page
+2019-03-24-16-06-44: coachcoach visited team page
+2019-03-24-16-06-45: coachcoach visited admin page
+2019-03-24-16-06-51: coachcoach visited admin page
+2019-03-24-16-06-53: coachcoach visited team page
+2019-03-24-16-06-54: coachcoach visited schedule page
+2019-03-24-16-06-56: coachcoach logged out
+2019-03-24-16-07-00: ritparent logged in
+2019-03-24-16-07-00: ritparent visited team page
+2019-03-24-16-07-01: ritparent visited team page
+2019-03-24-16-08-03: ritparent visited team page
+2019-03-24-16-08-42: ritparent visited team page
+2019-03-24-16-08-42: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-16-10-47: ritparent visited team page
+2019-03-24-16-10-47: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-16-11-13: ritparent visited team page
+2019-03-24-16-11-15: ritparent visited schedule page
+2019-03-24-16-11-17: ritparent visited team page
+2019-03-24-16-11-27: ritparent visited schedule page
+2019-03-24-16-11-57: ritparent visited schedule page
+2019-03-24-16-11-58: ritparent visited team page
+2019-03-24-16-13-33: ritparent visited schedule page
+2019-03-24-16-13-33: ritparent visited team page
+2019-03-24-16-15-48: ritparent logged out
+2019-03-24-16-32-23: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'role' cannot be null
+2019-03-24-16-32-23: ritparent2020 registered
+2019-03-24-16-33-19: parentparent registered
+2019-03-24-16-33-25: parentparent logged in
+2019-03-24-16-33-25: parentparent visited team page
+2019-03-24-16-33-58: parentparent visited schedule page
+2019-03-24-16-34-00: parentparent visited team page
+2019-03-24-16-35-17: parentparent visited team page
+2019-03-24-16-35-19: parentparent logged out
+2019-03-24-16-37-16: adminadmin logged in
+2019-03-24-16-37-16: adminadmin visited team page
+2019-03-24-16-37-18: adminadmin visited admin page
+2019-03-24-16-37-22: adminadmin visited schedule page
+2019-03-24-16-38-54: adminadmin visited schedule page
+2019-03-24-16-39-01: adminadmin logged out
+2019-03-24-16-39-05: adminadmin logged in
+2019-03-24-16-39-05: adminadmin visited team page
+2019-03-24-16-39-07: adminadmin logged out
+2019-03-24-16-40-15: NEWESTUSEREVER registered
+2019-03-24-16-40-21: newestuserever logged in
+2019-03-24-16-40-21: newestuserever visited team page
+2019-03-24-16-40-23: newestuserever visited team page
+2019-03-24-16-40-23: newestuserever visited schedule page
+2019-03-24-16-40-24: newestuserever logged out
+2019-03-24-16-40-27: adminadmin logged in
+2019-03-24-16-40-27: adminadmin visited team page
+2019-03-24-16-40-29: adminadmin visited admin page
+2019-03-24-16-40-47: adminadmin visited admin page
+2019-03-24-16-44-41: adminadmin visited admin page
+2019-03-24-16-44-59: adminadmin visited admin page
+2019-03-24-16-44-59: adminadmin visited admin page
+2019-03-24-16-45-00: adminadmin visited admin page
+2019-03-24-16-45-39: adminadmin visited admin page
+2019-03-24-16-45-40: adminadmin visited admin page
+2019-03-24-16-51-44: adminadmin visited admin page
+2019-03-24-16-52-00: adminadmin visited admin page
+2019-03-24-16-52-01: adminadmin visited admin page
+2019-03-24-16-54-29: adminadmin logged out
+2019-03-24-16-59-32: adminadmin logged in
+2019-03-24-16-59-32: adminadmin visited team page
+2019-03-24-16-59-34: adminadmin visited admin page
+2019-03-24-16-59-46: adminadmin logged out
+2019-03-24-17-00-11: adminadmin logged in
+2019-03-24-17-00-11: adminadmin visited team page
+2019-03-24-17-00-15: adminadmin visited schedule page
+2019-03-24-17-00-23: adminadmin visited admin page
+2019-03-24-17-01-30: adminadmin visited admin page
+2019-03-24-17-01-51: adminadmin visited team page
+2019-03-24-17-01-52: adminadmin visited schedule page
+2019-03-24-17-01-54: adminadmin visited team page
+2019-03-24-17-01-55: adminadmin visited admin page
+2019-03-24-17-01-57: adminadmin logged out
+2019-03-24-17-02-06: coachcoach logged in
+2019-03-24-17-02-06: coachcoach visited team page
+2019-03-24-17-02-10: coachcoach visited admin page
+2019-03-24-17-04-06: coachcoach visited admin page
+2019-03-24-17-04-11: coachcoach visited admin page
+2019-03-24-17-04-14: coachcoach logged out
+2019-03-24-17-04-22: lmanager logged in
+2019-03-24-17-04-22: lmanager visited team page
+2019-03-24-17-04-23: lmanager visited admin page
+2019-03-24-17-04-37: lmanager logged out
+2019-03-24-18-08-45: adminadmin logged in
+2019-03-24-18-08-45: adminadmin visited team page
+2019-03-24-18-08-46: adminadmin visited admin page
+2019-03-24-18-08-52: adminadmin visited admin page
+2019-03-24-18-08-59: adminadmin visited admin page
+2019-03-24-19-19-48: adminadmin visited admin page
+2019-03-24-19-19-58: adminadmin visited admin page
+2019-03-24-19-20-04: adminadmin visited admin page
+2019-03-24-19-20-13: adminadmin visited admin page
+2019-03-24-19-20-20: adminadmin visited admin page
+2019-03-24-19-20-54: adminadmin visited admin page
+2019-03-24-19-20-57: adminadmin visited admin page
+2019-03-24-19-20-59: adminadmin visited admin page
+2019-03-24-19-21-03: adminadmin visited admin page
+2019-03-24-19-21-09: adminadmin visited admin page
+2019-03-24-19-21-15: adminadmin visited admin page
+2019-03-24-19-21-27: adminadmin visited admin page
+2019-03-24-19-21-38: adminadmin visited admin page
+2019-03-24-19-21-41: adminadmin visited admin page
+2019-03-24-19-22-09: adminadmin visited admin page
+2019-03-24-19-22-19: adminadmin visited admin page
+2019-03-24-19-22-37: adminadmin visited admin page
+2019-03-24-19-22-38: adminadmin logged out
+2019-03-24-19-22-43: tmanager logged in
+2019-03-24-19-22-43: tmanager visited team page
+2019-03-24-19-22-45: tmanager visited admin page
+2019-03-24-19-23-39: tmanager logged out
+2019-03-24-19-23-42: adminadmin logged in
+2019-03-24-19-23-42: adminadmin visited team page
+2019-03-24-19-23-43: adminadmin visited admin page
+2019-03-24-19-24-35: adminadmin visited admin page
+2019-03-24-19-24-38: adminadmin visited admin page
+2019-03-24-19-24-43: adminadmin visited admin page
+2019-03-24-19-24-45: adminadmin logged out
+2019-03-24-19-24-54: parentparent logged in
+2019-03-24-19-24-54: parentparent logged in
+2019-03-24-19-24-54: parentparent visited team page
+2019-03-24-19-24-55: parentparent visited team page
+2019-03-24-19-25-00: parentparent logged out
+2019-03-24-19-53-15:  visited schedule page
+2019-03-24-19-58-55:  visited schedule page
+2019-03-24-20-13-00: coachcoach logged in
+2019-03-24-20-13-00: coachcoach visited team page
+2019-03-24-20-13-01: coachcoach visited admin page
+2019-03-24-20-13-24: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-13-24: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-13-30: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-13-30: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-13-30: coachcoach visited admin page
+2019-03-24-20-13-33: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-13-33: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-15-42: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-15-42: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-16-02: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-16-02: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-16-17: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-16-17: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-18-17: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-18-28: coachcoach logged out
+2019-03-24-20-18-39: lmanager logged in
+2019-03-24-20-18-39: lmanager visited team page
+2019-03-24-20-18-40: lmanager visited admin page
+2019-03-24-20-18-45: lmanager visited admin page
+2019-03-24-20-18-47: lmanager logged out
+2019-03-24-20-18-51: coachcoach logged in
+2019-03-24-20-18-51: coachcoach visited team page
+2019-03-24-20-18-52: coachcoach visited admin page
+2019-03-24-20-18-54: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-18-58: coachcoach logged out
+2019-03-24-20-19-04: tmanager logged in
+2019-03-24-20-19-04: tmanager visited team page
+2019-03-24-20-19-05: tmanager visited admin page
+2019-03-24-20-19-07: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-23-03: tmanager visited admin page
+2019-03-24-20-23-21: tmanager logged out
+2019-03-24-20-31-29: capusers registered
+2019-03-24-20-31-42: adminadmin logged in
+2019-03-24-20-31-42: adminadmin visited team page
+2019-03-24-20-31-43: adminadmin visited admin page
+2019-03-24-20-31-50: adminadmin visited admin page
+2019-03-24-20-31-51: adminadmin logged out
+2019-03-24-20-31-55: capusers logged in
+2019-03-24-20-31-55: capusers visited team page
+2019-03-24-20-31-56: capusers visited admin page
+2019-03-24-20-32-01: capusers visited admin page
+2019-03-24-20-32-05: capusers logged out
+2019-03-24-20-32-08: capusers logged in
+2019-03-24-20-32-08: capusers visited team page
+2019-03-24-20-32-09: capusers visited admin page
+2019-03-24-20-32-23: capusers logged out
+2019-03-24-20-34-35:  visited schedule page
+2019-03-24-20-34-36:  visited team page
+2019-03-24-20-35-20: adminadmin logged in
+2019-03-24-20-35-20: adminadmin visited team page
+2019-03-24-20-35-22: adminadmin visited admin page
+2019-03-24-20-44-51: adminadmin visited admin page
+2019-03-24-20-44-53: adminadmin visited admin page
+2019-03-24-20-44-56: adminadmin visited admin page
+2019-03-24-20-44-59: adminadmin logged out
+2019-03-24-20-45-21: coachcoach logged in
+2019-03-24-20-45-21: coachcoach visited team page
+2019-03-24-20-45-23: coachcoach visited admin page
+2019-03-24-20-45-25: coachcoach visited admin page
+2019-03-24-20-45-27: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-24-20-46-22: coachcoach visited admin page
+2019-03-24-20-46-23: coachcoach visited admin page
+2019-03-24-20-46-28: coachcoach visited admin page
+2019-03-24-20-46-32: coachcoach visited admin page
+2019-03-24-20-46-35: coachcoach visited admin page
+2019-03-24-20-46-39: coachcoach visited team page
+2019-03-24-20-46-39: coachcoach visited schedule page
+2019-03-24-20-46-41: coachcoach logged out
+2019-03-24-20-46-48: tmanager logged in
+2019-03-24-20-46-48: tmanager visited team page
+2019-03-24-20-46-50: tmanager visited admin page
+2019-03-24-20-46-54: tmanager visited admin page
+2019-03-24-20-46-57: tmanager visited admin page
+2019-03-24-20-47-03: tmanager visited admin page
+2019-03-24-20-47-07: tmanager visited team page
+2019-03-24-20-47-08: tmanager visited schedule page
+2019-03-24-20-47-09: tmanager logged out
+2019-03-24-20-47-23: lmanager logged in
+2019-03-24-20-47-23: lmanager visited team page
+2019-03-24-20-47-24: lmanager visited admin page
+2019-03-24-20-47-27: lmanager visited admin page
+2019-03-24-20-47-31: lmanager visited admin page
+2019-03-24-20-47-36: lmanager visited admin page
+2019-03-24-20-47-41: lmanager visited admin page
+2019-03-24-20-47-47: lmanager visited admin page
+2019-03-24-20-47-53: lmanager visited admin page
+2019-03-24-20-47-58: lmanager visited admin page
+2019-03-24-20-50-09: lmanager visited admin page
+2019-03-24-20-50-14: lmanager logged out
+2019-03-24-20-50-20: tmanager logged in
+2019-03-24-20-50-20: tmanager visited team page
+2019-03-24-20-50-21: tmanager visited admin page
+2019-03-24-20-50-25: tmanager visited admin page
+2019-03-24-20-52-36: tmanager visited schedule page
+2019-03-24-20-52-37: tmanager logged out
+2019-03-24-20-52-52: ritparent logged in
+2019-03-24-20-52-52: ritparent visited team page
+2019-03-24-20-52-53: ritparent visited schedule page
+2019-03-24-20-52-54: ritparent visited team page
+2019-03-24-20-52-54: ritparent visited schedule page
+2019-03-24-20-53-01: ritparent visited team page
+2019-03-24-20-53-16: ritparent visited team page
+2019-03-24-20-53-20: ritparent visited team page
+2019-03-24-20-57-15: ritparent visited team page
+2019-03-24-20-57-16: ritparent logged out
+2019-03-24-20-57-29: coachcoach logged in
+2019-03-24-20-57-29: coachcoach visited team page
+2019-03-24-20-57-30: coachcoach visited admin page
+2019-03-24-20-57-33: coachcoach visited admin page
+2019-03-24-20-57-35: coachcoach visited admin page
+2019-03-24-20-57-42: coachcoach visited admin page
+2019-03-24-20-57-48: coachcoach logged out
+2019-03-24-20-57-58: tmanager logged in
+2019-03-24-20-57-58: tmanager visited team page
+2019-03-24-20-57-59: tmanager visited admin page
+2019-03-24-20-58-02: tmanager visited admin page
+2019-03-24-20-58-05: tmanager visited admin page
+2019-03-24-20-58-11: tmanager visited admin page
+2019-03-24-20-58-57: tmanager visited admin page
+2019-03-24-20-59-02: tmanager visited admin page
+2019-03-24-20-59-06: tmanager visited admin page
+2019-03-24-20-59-10: tmanager visited admin page
+2019-03-24-20-59-14: tmanager logged out
+2019-03-24-20-59-41: tmanager logged in
+2019-03-24-20-59-41: tmanager visited team page
+2019-03-24-20-59-42: tmanager visited admin page
+2019-03-24-20-59-45: tmanager visited admin page
+2019-03-24-20-59-53: tmanager visited admin page
+2019-03-24-20-59-55: tmanager logged out
+2019-03-24-21-00-18: tmanager logged in
+2019-03-24-21-00-18: tmanager visited team page
+2019-03-24-21-00-19: tmanager visited admin page
+2019-03-24-21-00-25: tmanager visited admin page
+2019-03-24-21-00-41: tmanager logged out
+2019-03-24-21-01-04: lmanager logged in
+2019-03-24-21-01-04: lmanager visited team page
+2019-03-24-21-01-05: lmanager visited admin page
+2019-03-24-21-01-11: lmanager visited admin page
+2019-03-24-21-01-15: lmanager visited admin page
+2019-03-24-21-01-29: lmanager visited admin page
+2019-03-24-21-01-32: lmanager visited admin page
+2019-03-24-21-01-39: lmanager visited admin page
+2019-03-24-21-01-42: lmanager visited admin page
+2019-03-24-21-01-45: lmanager logged out
+2019-03-24-21-01-56: adminadmin logged in
+2019-03-24-21-01-56: adminadmin visited team page
+2019-03-24-21-01-59: adminadmin visited schedule page
+2019-03-24-21-02-01: adminadmin visited admin page
+2019-03-24-21-02-06: adminadmin visited admin page
+2019-03-24-21-02-13: adminadmin visited admin page
+2019-03-24-21-02-17: adminadmin visited admin page
+2019-03-24-21-03-02: adminadmin visited admin page
+2019-03-24-21-03-07: adminadmin visited admin page
+2019-03-24-21-03-10: adminadmin visited admin page
+2019-03-24-21-03-13: adminadmin visited admin page
+2019-03-24-21-03-19: adminadmin visited admin page
+2019-03-24-21-03-40: adminadmin visited admin page
+2019-03-24-21-03-42: adminadmin visited admin page
+2019-03-24-21-03-43: adminadmin visited admin page
+2019-03-24-21-03-45: adminadmin visited admin page
+2019-03-24-21-03-46: adminadmin visited admin page
+2019-03-24-21-03-48: adminadmin visited admin page
+2019-03-24-21-03-50: adminadmin visited admin page
+2019-03-24-21-03-51: adminadmin visited admin page
+2019-03-24-21-03-53: adminadmin visited admin page
+2019-03-24-21-04-01: adminadmin visited admin page
+2019-03-24-21-38-58: adminadmin visited admin page
+2019-03-24-22-11-53: adminadmin visited admin page
+2019-03-24-22-16-59: adminadmin visited admin page
+2019-03-24-22-17-19: adminadmin visited admin page
+2019-03-24-22-17-35: adminadmin visited admin page
+2019-03-24-22-18-03: adminadmin visited admin page
+2019-03-24-22-18-38: adminadmin visited admin page
+2019-03-24-22-18-47: adminadmin visited admin page
+2019-03-24-22-18-58: adminadmin visited admin page
+2019-03-24-22-19-07: adminadmin visited admin page
+2019-03-24-22-19-54: adminadmin visited admin page
+2019-03-24-22-20-34: adminadmin visited admin page
+2019-03-24-22-21-23: adminadmin visited admin page
+2019-03-24-22-21-53: adminadmin visited admin page
+2019-03-24-22-22-23: adminadmin visited admin page
+2019-03-24-22-22-48: adminadmin visited admin page
+2019-03-24-22-22-57: adminadmin visited admin page
+2019-03-24-22-23-34: adminadmin visited admin page
+2019-03-24-22-23-59: adminadmin visited admin page
+2019-03-24-22-24-24: adminadmin visited admin page
+2019-03-24-22-25-02: adminadmin visited admin page
+2019-03-24-22-25-35: adminadmin visited admin page
+2019-03-24-22-25-40: adminadmin logged out
+2019-03-24-22-25-54: adminadmin logged in
+2019-03-24-22-25-54: adminadmin visited team page
+2019-03-24-22-25-56: adminadmin visited schedule page
+2019-03-24-22-33-56: adminadmin visited team page
+2019-03-24-22-33-57: adminadmin visited admin page
+2019-03-24-22-34-03: adminadmin visited admin page
+2019-03-24-22-34-08: adminadmin visited admin page
+2019-03-24-22-34-55: adminadmin visited admin page
+2019-03-24-22-35-15: adminadmin visited admin page
+2019-03-24-22-35-47: adminadmin visited admin page
+2019-03-24-22-35-54: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2019-03-24-22-35-54: adminadmin visited admin page
+2019-03-24-22-36-22: adminadmin visited admin page
+2019-03-24-22-36-41: adminadmin visited admin page
+2019-03-24-22-36-46: adminadmin visited admin page
+2019-03-24-22-37-10: adminadmin visited admin page
+2019-03-24-22-37-28: adminadmin visited admin page
+2019-03-24-22-37-52: adminadmin visited admin page
+2019-03-24-22-38-07: adminadmin visited admin page
+2019-03-24-22-38-42: adminadmin visited admin page
+2019-03-24-22-39-08: adminadmin visited admin page
+2019-03-24-22-39-51: adminadmin visited admin page
+2019-03-24-22-40-15: adminadmin visited admin page
+2019-03-24-22-40-35: adminadmin visited admin page
+2019-03-24-22-40-58: adminadmin visited admin page
+2019-03-24-22-41-13: adminadmin visited admin page
+2019-03-24-22-41-45: adminadmin visited admin page
+2019-03-24-22-41-48: adminadmin logged out
+2019-03-24-22-42-03: coachcoach logged in
+2019-03-24-22-42-03: coachcoach visited team page
+2019-03-24-22-42-06: coachcoach visited schedule page
+2019-03-24-22-42-19: coachcoach visited admin page
+2019-03-24-22-42-39: coachcoach logged out

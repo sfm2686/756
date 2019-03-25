@@ -10,12 +10,20 @@
   session_start();
 
   /******************************** USER **************************************/
-  if (isset($_SESSION['user_edit']) && isset($_GET['username'])) {
+
+  // not checking session permission for usname and password to enable ajax
+  // calls for login/registration pages where the session is not made yet
+  if (isset($_GET['username'])) {
     echo json_encode(User::validate_username($_GET['username']));
   }
 
-  if (isset($_SESSION['user_edit']) && isset($_GET['password'])) {
-    echo json_encode(User::validate_password($_GET['password']));
+  if (isset($_GET['password']) || isset($_GET['password1'])) {
+    if (isset($_GET['password1'])) { // verify both password and password1 fields
+      $password = $_GET['password1'];
+    } else {
+      $password = $_GET['password'];
+    }
+    echo json_encode(User::validate_password($password));
   }
 
   /******************************** SPORT *************************************/
