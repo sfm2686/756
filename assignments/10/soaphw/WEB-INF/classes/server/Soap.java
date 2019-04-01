@@ -1,9 +1,9 @@
-// package server;
+package server;
 
-// import javax.jws.*;
+import javax.jws.*;
 import java.util.*;
 
-// @WebService(serviceName="SoapsSoapService")
+@WebService(serviceName="SoapsSoapService")
 public class Soap {
 
 	private Map<String, Double> soaps = new HashMap<String, Double>();
@@ -16,17 +16,17 @@ public class Soap {
 		this.soaps.put("zest", 3.00);
 	}
 
-	// @WebMethod(operationName="getPrice")
+	@WebMethod(operationName="getPrice")
 	public Double getPrice(String product) {
 		return this.soaps.get(product.toLowerCase());
 	}
 
-	// @WebMethod(operationName="getProducts")
+	@WebMethod(operationName="getProducts")
 	public String[] getProducts() {
 		return this.soaps.keySet().toArray(new String[0]);
 	}
 
-	// @WebMethod(operationName="getCheapest")
+	@WebMethod(operationName="getCheapest")
 	public String getCheapest() {
 		Double lowest = Double.MAX_VALUE;
 		String lowestKey = "";
@@ -39,7 +39,7 @@ public class Soap {
 		return lowestKey;
 	}
 
-	// @WebMethod(operationName="getCostliest")
+	@WebMethod(operationName="getCostliest")
 	public String getCostliest() {
 		Double highest = 0.0; // no negative prices
 		String highestKey = "";
@@ -52,7 +52,7 @@ public class Soap {
 		return highestKey;
 	}
 
-	// @WebMethod(operationName="getMethods")
+	@WebMethod(operationName="getMethods")
 	public String[] getMethods() {
 		return new String[] {"getPrice(String product)", "getProducts()", "getCheapest()",
 						"getCostliest()"};
