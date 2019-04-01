@@ -20,21 +20,21 @@ public class Soap {
 
 	@WebMethod(operationName="getProducts")
 	public String[] getProducts() {
-		;
+		return null;
 	}
 
 	@WebMethod(operationName="getCheapest")
 	public String getCheapest() {
-			;
+			return null;
 	}
 
 	@WebMethod(operationName="getCostliest")
 	public String getCostliest() {
-		;
+		return null;
 	}
 
 	@WebMethod(operationName="getMethods")
 	public String[] getMethods() {
-		;
+		return null;
 	}
 }
