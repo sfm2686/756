@@ -1,7 +1,7 @@
 package server;
 
 import javax.jws.*;
-import java.util.*; 
+import java.util.*;
 
 @WebService(serviceName="SoapsSoapService")
 public class Soap {
@@ -13,22 +13,22 @@ public class Soap {
 		this.soaps.put("Irish Spring", 4.39);
 	}
 
-	@WebService(operationName="getPrice")
+	@WebMethod(operationName="getPrice")
 	public Double getPrice(String product) {
 		return this.soaps.get(product);
 	}
 
-	@WebService(operationName="getProducts")
+	@WebMethod(operationName="getProducts")
 	public String[] getProducts() {
 		;
 	}
 
-	@WebService(operationName="getCheapest")
+	@WebMethod(operationName="getCheapest")
 	public String getCheapest() {
 			;
 	}
 
-	@WebService(operationName="getCostliest")
+	@WebMethod(operationName="getCostliest")
 	public String getCostliest() {
 		;
 	}
