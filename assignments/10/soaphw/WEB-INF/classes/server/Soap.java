@@ -3,7 +3,7 @@ package server;
 import javax.jws.*;
 import java.util.*;
 
-@WebService(serviceName="SoapsSoapService")
+@WebService(serviceName="SOAPSoapService")
 public class Soap {
 
 	private Map<String, Double> soaps = new HashMap<String, Double>();
