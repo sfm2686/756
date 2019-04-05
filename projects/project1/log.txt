@@ -1167,3 +1167,105 @@
 2019-03-24-22-42-06: coachcoach visited schedule page
 2019-03-24-22-42-19: coachcoach visited admin page
 2019-03-24-22-42-39: coachcoach logged out
+2019-03-24-22-45-04: adminadmin logged in
+2019-03-24-22-45-04: adminadmin visited team page
+2019-03-24-22-45-06: adminadmin visited admin page
+2019-03-24-22-45-37: adminadmin visited admin page
+2019-03-24-22-45-51: adminadmin visited admin page
+2019-03-24-22-46-06: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2019-03-24-22-46-06: adminadmin visited admin page
+2019-03-24-22-46-15: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2019-03-24-22-46-15: adminadmin visited admin page
+2019-03-24-22-46-19: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2019-03-24-22-46-19: adminadmin visited admin page
+2019-03-24-22-46-23: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2019-03-24-22-46-23: adminadmin visited admin page
+2019-03-24-22-46-29: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2019-03-24-22-46-29: adminadmin visited admin page
+2019-03-24-22-46-33: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2019-03-24-22-46-33: adminadmin visited admin page
+2019-03-24-22-46-52: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2019-03-24-22-46-52: adminadmin visited admin page
+2019-03-24-22-46-59: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2019-03-24-22-46-59: adminadmin visited admin page
+2019-03-24-22-47-32: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2019-03-24-22-47-32: adminadmin visited admin page
+2019-03-24-22-51-58: adminadmin visited team page
+2019-03-24-22-52-00: adminadmin logged out
+2019-03-24-22-54-01: parentparent logged in
+2019-03-24-22-54-01: parentparent visited team page
+2019-03-24-22-54-03: parentparent logged out
+2019-03-29-20-42-50: parentparent logged in
+2019-03-29-20-42-51: parentparent visited team page
+2019-03-29-20-43-03: parentparent visited schedule page
+2019-03-29-20-43-47: parentparent logged out
+2019-03-29-20-43-56: coachcoach logged in
+2019-03-29-20-43-56: coachcoach visited team page
+2019-03-29-20-44-03: coachcoach visited schedule page
+2019-03-29-20-44-07: coachcoach visited admin page
+2019-03-29-20-44-35: coachcoach visited admin page
+2019-03-29-20-45-46: coachcoach visited admin page
+2019-03-29-20-46-12: coachcoach visited admin page
+2019-03-29-20-46-23: coachcoach visited admin page
+2019-03-29-20-46-27: coachcoach visited admin page
+2019-03-29-20-46-40: coachcoach visited admin page
+2019-03-29-20-46-54: coachcoach visited admin page
+2019-03-29-20-47-02: coachcoach visited admin page
+2019-03-29-20-47-13: coachcoach visited schedule page
+2019-03-29-20-47-15: coachcoach logged out
+2019-03-29-20-47-25: tmanager logged in
+2019-03-29-20-47-25: tmanager visited team page
+2019-03-29-20-47-29: tmanager visited team page
+2019-03-29-20-47-30: tmanager visited schedule page
+2019-03-29-20-47-31: tmanager visited admin page
+2019-03-29-20-48-25: tmanager logged out
+2019-03-29-20-48-30: lmanager logged in
+2019-03-29-20-48-30: lmanager visited team page
+2019-03-29-20-48-34: lmanager visited schedule page
+2019-03-29-20-48-35: lmanager visited team page
+2019-03-29-20-48-36: lmanager visited admin page
+2019-03-29-20-49-06: lmanager visited team page
+2019-03-29-20-49-07: lmanager visited schedule page
+2019-03-29-20-49-08: lmanager visited admin page
+2019-03-29-20-49-49: lmanager visited admin page
+2019-03-29-20-49-53: lmanager visited admin page
+2019-03-29-20-50-30: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sfm2686`.`server_team`, CONSTRAINT `slsFK` FOREIGN KEY (`sport`, `league`, `season`) REFERENCES `server_slseason` (`sport`, `league`, `season`) ON DELETE CASCADE ON UPDATE CASCADE)
+2019-03-29-20-50-48: lmanager visited admin page
+2019-03-29-20-51-33: lmanager visited admin page
+2019-03-29-20-51-50: lmanager visited admin page
+2019-03-29-20-51-57: lmanager visited admin page
+2019-03-29-20-53-06: lmanager visited admin page
+2019-03-29-20-53-15: lmanager visited team page
+2019-03-29-20-53-33: lmanager visited admin page
+2019-03-29-20-53-45: lmanager visited admin page
+2019-03-29-20-55-35: lmanager visited admin page
+2019-03-29-20-57-16: lmanager visited admin page
+2019-03-29-20-57-46: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sfm2686`.`server_schedule`, CONSTRAINT `schslseasonFK` FOREIGN KEY (`sport`, `league`, `season`) REFERENCES `server_slseason` (`sport`, `league`, `season`) ON DELETE CASCADE ON UPDATE CASCADE)
+2019-03-29-20-57-46: lmanager visited admin page
+2019-03-29-20-57-54: lmanager visited admin page
+2019-03-29-20-58-08: lmanager visited admin page
+2019-03-29-20-58-14: lmanager visited schedule page
+2019-03-29-20-58-15: lmanager visited team page
+2019-03-29-20-58-45: lmanager logged out
+2019-03-29-20-58-50: adminadmin logged in
+2019-03-29-20-58-51: adminadmin visited team page
+2019-03-29-20-58-59: adminadmin visited schedule page
+2019-03-29-20-59-12: adminadmin visited admin page
+2019-03-29-21-01-14: adminadmin visited admin page
+2019-03-29-21-01-20: adminadmin visited admin page
+2019-03-29-21-01-35: adminadmin visited admin page
+2019-03-29-21-01-40: adminadmin visited admin page
+2019-03-29-21-02-00: adminadmin logged out
+2019-03-29-21-02-03:  visited schedule page
+2019-03-29-21-02-05:  visited team page
+2019-03-29-21-08-49: deanganskop registered
+2019-03-29-21-09-02: deanganskop logged in
+2019-03-29-21-09-02: deanganskop visited team page
+2019-03-29-21-09-02: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-29-21-09-04: deanganskop visited team page
+2019-03-29-21-09-04: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2019-03-29-21-09-05: deanganskop visited schedule page
+2019-03-29-21-11-08: deanganskop logged out
+2019-03-29-21-11-17: adminadmin logged in
+2019-03-29-21-11-17: adminadmin visited team page
+2019-03-29-21-11-19: adminadmin visited admin page
