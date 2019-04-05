@@ -1,0 +1,10 @@
+<web-app>
+  <servlet>
+    <display-name>Area Calculator Service</display-name>
+    <servlet-name>Area.ApplicationConfig</servlet-name>
+    <init-params>
+      <param-name>javax.ws.rs.ApplicationConfig</param-name>
+      <param-value>Area.ApplicationConfig</param-value>
+    </init-params>
+  </servlet>
+</web-app>
