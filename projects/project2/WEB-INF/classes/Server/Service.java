@@ -81,6 +81,31 @@ public class Service {
     return true;
   }
 
+/****************************** COMPANY ENDPOINT ******************************/
+@Path("company")
+@DELETE
+@Produces("application/json")
+public String deleteCompany(
+@DefaultValue(DEFAULT_COMPANY) @QueryParam("company") String company
+) {
+  JSONObject result = new JSONObject();
+  if (!this.validateString(company, 10, 1)) {
+    result.put("error", "Invalid company");
+    return result.toString();
+  }
+  try {
+    this.dl = new DataLayer("production");
+    this.dl.deleteCompany(company);
+    result.put("success", company + "\'s information deleted");
+    return result.toString();
+  } catch (Exception e) {
+    result.put("error", "An error has occured deleting company: " + company);
+    return result.toString();
+  } finally {
+    this.dl.close();
+  }
+}
+
 /**************************** DEPARTMENT ENDPOINTS ****************************/
   @Path("departments")
   @GET
