@@ -44,3 +44,34 @@ app.put(/CompanyServices\/department$/, (req, res) => {
   res.type("json").send(JSON.stringify(bl.updateDept(req.body.company, req.body.dept_name,
   req.body.dept_no, req.body.location, req.body.dept_id)));
 });
+
+/*************************** EMPLOYEE ENDPOINTS *******************************/
+app.post(/CompanyServices\/employee$/, (req, res) => {
+  res.type("json").send(JSON.stringify(bl.insertEmployee(
+    req.body.emp_name, req.body.emp_no,
+    req.body.hire_date, req.body.job,
+    req.body.salary, req.body.dept_id,
+    req.body.mng_id
+    )));
+});
+
+app.get(/CompanyServices\/employees$/, (req, res) => {
+  res.type("json").send(JSON.stringify(bl.getAllEmployees(req.query.company)));
+});
+
+app.get(/CompanyServices\/employee$/, (req, res) => {
+  res.type("json").send(JSON.stringify(bl.getEmployee(req.query.emp_id)));
+});
+
+app.delete(/CompanyServices\/employee$/, (req, res) => {
+  res.type("json").send(JSON.stringify(bl.deleteEmployee(req.query.emp_id)));
+});
+
+app.put(/CompanyServices\/employee$/, (req, res) => {
+  res.type("json").send(JSON.stringify(bl.updateEmployee(
+    req.body.emp_id, req.body.emp_name,
+    req.body.emp_no, req.body.hire_date,
+    req.body.job, req.body.salary,
+    req.body.dept_id, req.body.mng_id
+    )));
+});
