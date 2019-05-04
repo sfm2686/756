@@ -11,8 +11,6 @@ var bl = require('./businessLayer');
 app.use(express.urlencoded({extended:false}))
 app.use(express.json())
 
-      // port, callback function for listening (arrow replaces the word function in ES6)
-      // TODO change port to 8080*********************************
 const server = app.listen(8080, () => {
         const host = server.address().address,
               port = server.address().port;
@@ -74,4 +72,39 @@ app.put(/CompanyServices\/employee$/, (req, res) => {
     req.body.job, req.body.salary,
     req.body.dept_id, req.body.mng_id
     )));
+});
+
+/*************************** TIMECARD ENDPOINTS *******************************/
+app.post(/CompanyServices\/timecard$/, (req, res) => {
+  res.type("json").send(JSON.stringify(bl.insertTimecard(
+    req.body.emp_id, req.body.start_time,
+    req.body.end_time)));
+});
+
+app.get(/CompanyServices\/timecards$/, (req, res) => {
+  res.type("json").send(JSON.stringify(bl.getAllTimecards(
+    req.query.emp_id)));
+});
+
+app.get(/CompanyServices\/timecard$/, (req, res) => {
+  res.type("json").send(JSON.stringify(bl.getTimecard(
+    req.query.timecard_id)));
+});
+
+app.delete(/CompanyServices\/timecard$/, (req, res) => {
+  res.type("json").send(JSON.stringify(bl.deleteTimecard(
+    req.query.timecard_id)));
+});
+
+app.put(/CompanyServices\/timecard$/, (req, res) => {
+  res.type("json").send(JSON.stringify(bl.updateTimecard(
+    req.body.timecard_id, req.body.emp_id,
+    req.body.start_time, req.body.end_time
+    )));
+});
+
+/**************************** COMPANY ENDPOINT ********************************/
+app.delete(/CompanyServices\/company$/, (req, res) => {
+  res.type("json").send(JSON.stringify(bl.deleteCompany(
+    req.query.company)));
 });

@@ -14,17 +14,17 @@ exports.getAllDepts = function (company) {
 exports.getDept = function (company, id) {
   var resp = datalayer.getDepartment(company, id);
   if (resp == null) {
-    resp = {Error: "No department found with dept_id: " + id};
+    return {Error: "No department found with dept_id: " + id};
   }
-  return resp;
+  return {Success: resp};
 }
 
 exports.insertDept = function(company, name, no, loc) {
   var inserted = datalayer.insertDepartment(new Department(company, name, no, loc));
   if (inserted == null) {
-    inserted = {Error: "dept_no must be unique"};
+    return {Error: "dept_no must be unique"};
   }
-  return inserted;
+  return {Success: inserted};
 }
 
 exports.deleteDept = function(company, id) {
@@ -46,9 +46,9 @@ exports.updateDept = function(company, name, no, loc, id) {
   result.setDeptNo(no);
   var updated = datalayer.updateDepartment(result);
   if (updated == null) {
-    updated = {Error: "dept_no must be unique"};
+    return {Error: "dept_no must be unique"};
   }
-  return updated;
+  return {Success: updated};
 }
 
 /***************************** EMPLOYEE LOGIC *********************************/
@@ -72,7 +72,7 @@ exports.insertEmployee = function(name, no, hireDate, job, sal, dept_id, mng_id)
   if (emp == null) {
     return {Error: "emp_no must be unique"};
   }
-  return emp;
+  return {Success: emp};
 }
 
 exports.getAllEmployees = function(company) {
@@ -83,15 +83,15 @@ exports.getAllEmployees = function(company) {
 exports.getEmployee = function(id) {
   var emp = datalayer.getEmployee(id);
   if (emp == null) {
-    return {Error: "no employee found with id: " + id};
+    return {Error: "No employee found with id: " + id};
   }
-  return emp;
+  return {Success: emp};
 }
 
 exports.deleteEmployee = function(id) {
   var emp = datalayer.getEmployee(id);
   if (emp == null) {
-    return {Error: "no employee found with id: " + id};
+    return {Error: "No employee found with id: " + id};
   }
   datalayer.deleteEmployee(id);
   return {Success: "Employee " + id + " has been deleted"};
@@ -100,13 +100,13 @@ exports.deleteEmployee = function(id) {
 exports.updateEmployee = function(id, name, no, hireDate, job, sal, dept_id, mng_id) {
   var emp = datalayer.getEmployee(id);
   if (emp == null) {
-    return {Error: "no employee found with id: " + id};
+    return {Error: "No employee found with id: " + id};
   }
   var mng = datalayer.getEmployee(mng_id);
   if (mng == null && mng_id != 0) {
     return {Error: "mng_id must reference an existing employee"};
   }
-  hire_date = new Date(hireDate);
+  var hire_date = new Date(hireDate);
   if (!date_fns.isPast(hire_date)) {
     return {Error: "hire_date must be in the past"};
   }
@@ -126,7 +126,116 @@ exports.updateEmployee = function(id, name, no, hireDate, job, sal, dept_id, mng
   emp.setMngId(mng_id);
   var updated = datalayer.updateEmployee(emp);
   if (updated == null) {
-    updated = {Error: "emp_no must be unique"};
+    return {Error: "emp_no must be unique"};
   }
-  return updated;
+  return {Success: updated};
+}
+
+/***************************** TIMECARD LOGIC *********************************/
+exports.insertTimecard = function(emp_id, start_d, end_d) {
+  var emp = datalayer.getEmployee(emp_id);
+  if (emp == null) {
+    return {Error: "No employee found with id: " + emp_id};
+  }
+  var start = new Date(start_d);
+  var end = new Date(end_d);
+  // checking start_time is current date or at least within 1 week ago
+  if (date_fns.differenceInDays(start, new Date()) < -7 || !date_fns.isPast(start)) {
+    return {Error: "start_time must be between current date and 1 week ago"};
+  }
+  if (date_fns.isWeekend(start)) {
+    return {Error: "start_time cannot be a weekend"};
+  }
+  if (date_fns.getHours(start) < 6 || date_fns.getHours(start) > 18) {
+    return {Error: "start_time must be between the hours of 6 and 18 (24h format)"};
+  }
+  if (date_fns.isWeekend(end)) {
+    return {Error: "end_time cannot be a weekend"};
+  }
+  if (date_fns.getHours(end) < 6 || date_fns.getHours(end) > 18) {
+    return {Error: "end_time must be between the hours of 6 and 18 (24h format)"};
+  }
+  if (date_fns.differenceInHours(end, start) < 1) {
+    return {Error: "end_time must be at least 1 hour greater than start_time"};
+  }
+  // validate start date not the same as any other start date
+  var tcs = datalayer.getAllTimecard(emp_id);
+  for (var i = 0; i < tcs.length; i ++) {
+    if (date_fns.differenceInDays(new Date(tcs[i].getStartTime()), start) == 0) {
+      return {Error: "There is already an inserted timecard with the same start day for employee: " + emp_id};
+    }
+  }
+  var inserted = datalayer.insertTimecard(new Timecard(start_d, end_d, emp_id));
+  return {Success: inserted};
+}
+
+exports.getAllTimecards = function(emp_id) {
+  return datalayer.getAllTimecard(emp_id);
+}
+
+exports.deleteTimecard = function(tc_id) {
+  var tc = datalayer.getTimecard(tc_id);
+  if (tc == null) {
+    return {Error: "No timecard found with id: " + tc_id};
+  }
+  datalayer.deleteTimecard(tc_id);
+  return {Success: "Timecard " + tc_id + " has been deleted"};
+}
+
+exports.getTimecard = function(tc_id) {
+  var tc = datalayer.getTimecard(tc_id);
+  if (tc == null) {
+    return {Error: "No timecard found with id: " + tc_id};
+  }
+  return {Success: tc};
+}
+
+exports.updateTimecard = function(tc_id, emp_id, start_d, end_d) {
+  var emp = datalayer.getEmployee(emp_id);
+  if (emp == null) {
+    return {Error: "No employee found with id: " + emp_id};
+  }
+  var start = new Date(start_d);
+  var end = new Date(end_d);
+  // checking start_time is current date or at least within 1 week ago
+  if (date_fns.differenceInDays(start, new Date()) < -7 || !date_fns.isPast(start)) {
+    return {Error: "start_time must be between current date and 1 week ago"};
+  }
+  if (date_fns.isWeekend(start)) {
+    return {Error: "start_time cannot be a weekend"};
+  }
+  if (date_fns.getHours(start) < 6 || date_fns.getHours(start) > 18) {
+    return {Error: "start_time must be between the hours of 6 and 18 (24h format)"};
+  }
+  if (date_fns.isWeekend(end)) {
+    return {Error: "end_time cannot be a weekend"};
+  }
+  if (date_fns.getHours(end) < 6 || date_fns.getHours(end) > 18) {
+    return {Error: "end_time must be between the hours of 6 and 18 (24h format)"};
+  }
+  if (date_fns.differenceInHours(end, start) < 1) {
+    return {Error: "end_time must be at least 1 hour greater than start_time"};
+  }
+  // validate start date not the same as any other start date
+  var tcs = datalayer.getAllTimecard(emp_id);
+  for (var i = 0; i < tcs.length; i ++) {
+    if (date_fns.differenceInDays(new Date(tcs[i].getStartTime()), start) == 0) {
+      return {Error: "There is already an inserted timecard with the same start day for employee: " + emp_id};
+    }
+  }
+  var updated = datalayer.getTimecard(tc_id);
+  updated.setStartTime(start_d);
+  updated.setEndTime(end_d);
+  updated.setEmpId(emp_id);
+  updated = datalayer.updateTimecard(updated);
+  return {Success: updated};
+}
+
+/****************************** COMPANY LOGIC *********************************/
+exports.deleteCompany = function(company) {
+  var deleted = datalayer.deleteCompany(company);
+  if (deleted == 0) {
+    return {Error: "Company could not be deleted, please make sure you have the right company"};
+  }
+  return {Success: company + "\'s information deleted"};
 }
